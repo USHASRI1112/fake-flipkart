@@ -6,6 +6,8 @@ import type { CartItem, Order } from '../types/shop';
 
 const WALLET_START = 100000000;
 const ORDER_STATUS_LIMIT = 5;
+const OUT_FOR_DELIVERY_DURATION_MS = 45000;
+const PRE_DELIVERY_STEP_MS = 6000;
 
 type ShopState = {
   catalog: CatalogProduct[];
@@ -14,6 +16,7 @@ type ShopState = {
   walletBalance: number;
   cart: CartItem[];
   orders: Order[];
+  recentOrderId: string | null;
   cartCount: number;
   cartTotal: number;
   totalSpent: number;
@@ -23,6 +26,7 @@ type ShopState = {
   removeFromCart: (productId: string) => void;
   clearCart: () => void;
   placeOrder: () => void;
+  clearRecentOrder: () => void;
   advanceOrderStatuses: () => void;
 };
 
@@ -44,6 +48,7 @@ export const useShopStore = create<ShopState>((set, get) => ({
   walletBalance: WALLET_START,
   cart: [],
   orders: [],
+  recentOrderId: null,
   cartCount: 0,
   cartTotal: 0,
   totalSpent: 0,
@@ -136,6 +141,8 @@ export const useShopStore = create<ShopState>((set, get) => ({
           total: product ? product.price * item.quantity : 0,
           placedAt: formatOrderDate(),
           statusIndex: 0,
+          outForDeliveryAt: null,
+          nextStatusAt: Date.now() + PRE_DELIVERY_STEP_MS,
         };
       }),
       ...get().orders,
@@ -143,6 +150,7 @@ export const useShopStore = create<ShopState>((set, get) => ({
 
     set({
       orders: nextOrders,
+      recentOrderId: nextOrders[0]?.id ?? null,
       walletBalance: Math.max(0, walletBalance - cartTotal),
       cart: [],
       cartCount: 0,
@@ -150,12 +158,47 @@ export const useShopStore = create<ShopState>((set, get) => ({
       totalSpent: calculateOrderTotal(nextOrders),
     });
   },
+  clearRecentOrder: () => set({ recentOrderId: null }),
   advanceOrderStatuses: () =>
-    set((state) => ({
-      orders: state.orders.map((order) =>
-        order.statusIndex >= ORDER_STATUS_LIMIT
-          ? order
-          : { ...order, statusIndex: order.statusIndex + 1 },
-      ),
-    })),
+    set((state) => {
+      const now = Date.now();
+
+      return {
+        orders: state.orders.map((order) => {
+          if (order.statusIndex >= ORDER_STATUS_LIMIT) {
+            return order;
+          }
+
+          if (order.nextStatusAt !== null && now < order.nextStatusAt) {
+            return order;
+          }
+
+          const nextStatusIndex = order.statusIndex + 1;
+
+          if (nextStatusIndex >= ORDER_STATUS_LIMIT) {
+            return {
+              ...order,
+              statusIndex: ORDER_STATUS_LIMIT,
+              nextStatusAt: null,
+            };
+          }
+
+          if (nextStatusIndex === 4) {
+            const deliveryStart = now;
+            return {
+              ...order,
+              statusIndex: nextStatusIndex,
+              outForDeliveryAt: deliveryStart,
+              nextStatusAt: deliveryStart + OUT_FOR_DELIVERY_DURATION_MS,
+            };
+          }
+
+          return {
+            ...order,
+            statusIndex: nextStatusIndex,
+            nextStatusAt: now + PRE_DELIVERY_STEP_MS,
+          };
+        }),
+      };
+    }),
 }));

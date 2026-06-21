@@ -119,7 +119,7 @@ export default function CheckoutScreen() {
   if (!cart.length) {
     return (
       <View style={styles.screen}>
-        <ScreenHeader title="Payment" subtitle="Your cart is empty" onBack={() => router.back()} />
+        <ScreenHeader title="Payment" subtitle="Your cart is empty" onBack={() => router.replace('/cart')} />
         <View style={styles.emptyWrap}>
           <EmptyState
             iconName="card-outline"
@@ -133,7 +133,7 @@ export default function CheckoutScreen() {
 
   return (
     <View style={styles.screen}>
-      <ScreenHeader title="Payment" subtitle="Choose a payment method" onBack={() => router.back()} />
+      <ScreenHeader title="Payment" subtitle="Choose a payment method" onBack={() => router.replace('/cart')} />
 
       <ScrollView
         contentContainerStyle={[styles.content, { paddingBottom: insets.bottom + 120 }]}

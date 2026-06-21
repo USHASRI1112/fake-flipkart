@@ -1,6 +1,7 @@
 import { FlatList, StyleSheet, View } from 'react-native';
 
 import { EmptyState } from '../../components/EmptyState';
+import { OrderDeliveryCelebration } from '../../components/OrderDeliveryCelebration';
 import { OrderCard } from '../../components/OrderCard';
 import { ScreenHeader } from '../../components/ScreenHeader';
 import { getProductById } from '../../services/catalog';
@@ -10,6 +11,10 @@ import { useShopStore } from '../../store/useShopStore';
 export default function OrdersScreen() {
   const orders = useShopStore((state) => state.orders);
   const catalog = useShopStore((state) => state.catalog);
+  const recentOrderId = useShopStore((state) => state.recentOrderId);
+  const clearRecentOrder = useShopStore((state) => state.clearRecentOrder);
+  const recentOrder = recentOrderId ? orders.find((order) => order.id === recentOrderId) : null;
+  const recentProduct = recentOrder ? getProductById(catalog, recentOrder.productId) ?? catalog[0] : null;
 
   return (
     <View style={styles.screen}>
@@ -27,6 +32,15 @@ export default function OrdersScreen() {
           data={orders}
           keyExtractor={(item) => item.id}
           contentContainerStyle={styles.list}
+          ListHeaderComponent={
+            recentOrder && recentProduct ? (
+              <OrderDeliveryCelebration
+                order={recentOrder}
+                product={recentProduct}
+                onDone={clearRecentOrder}
+              />
+            ) : null
+          }
           renderItem={({ item }) => {
             const product = getProductById(catalog, item.productId) ?? catalog[0];
             if (!product) {

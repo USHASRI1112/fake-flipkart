@@ -41,4 +41,6 @@ export type Order = {
   total: number;
   placedAt: string;
   statusIndex: number;
+  outForDeliveryAt: number | null;
+  nextStatusAt: number | null;
 };

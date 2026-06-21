@@ -5,6 +5,8 @@ export type CatalogProduct = Product;
 
 const CATALOG_PRODUCTS = catalogData as CatalogProduct[];
 
+const FEATURED_CATEGORY_IDS = ['mobiles-and-accessories', 'food-and-nutrition'];
+
 type CategoryMeta = {
   name: string;
   icon: string;
@@ -15,12 +17,14 @@ const CATEGORY_META: Record<string, CategoryMeta> = {
   clothing: { name: 'Clothing', icon: 'checkroom', tint: '#DB2777' },
   jewellery: { name: 'Jewellery', icon: 'diamond', tint: '#B45309' },
   footwear: { name: 'Footwear', icon: 'two-wheeler', tint: '#059669' },
+  'mobiles-and-accessories': { name: 'Mobiles & Accessories', icon: 'smartphone', tint: '#2874F0' },
   'mobiles-accessories': { name: 'Mobiles & Accessories', icon: 'smartphone', tint: '#2874F0' },
   automotive: { name: 'Automotive', icon: 'directions-car', tint: '#111827' },
   'home-decor-festive-needs': { name: 'Home Decor', icon: 'home', tint: '#7C3AED' },
   'beauty-and-personal-care': { name: 'Beauty', icon: 'spa', tint: '#F97316' },
   'home-furnishing': { name: 'Home Furnishing', icon: 'weekend', tint: '#0F766E' },
   'kitchen-dining': { name: 'Kitchen & Dining', icon: 'restaurant', tint: '#F59E0B' },
+  'food-and-nutrition': { name: 'Food & Nutrition', icon: 'fastfood', tint: '#EA580C' },
   computers: { name: 'Computers', icon: 'devices', tint: '#0EA5E9' },
   watches: { name: 'Watches', icon: 'watch', tint: '#7C3AED' },
   'baby-care': { name: 'Baby Care', icon: 'child-care', tint: '#EC4899' },
@@ -113,10 +117,15 @@ export function getCatalogCategories(products: Product[]) {
     counts.set(product.categoryId, (counts.get(product.categoryId) ?? 0) + 1);
   }
 
-  return [...counts.entries()]
+  const prioritizedIds = FEATURED_CATEGORY_IDS.filter((id) => counts.has(id));
+  const remainingIds = [...counts.entries()]
+    .filter(([id]) => !prioritizedIds.includes(id))
     .sort((a, b) => b[1] - a[1])
+    .map(([id]) => id);
+
+  return [...prioritizedIds, ...remainingIds]
     .slice(0, 8)
-    .map(([id]) => ({
+    .map((id) => ({
       id,
       name: nameForCategory(id),
       icon: iconForCategory(id),
