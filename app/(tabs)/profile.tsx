@@ -1,5 +1,8 @@
-import { StyleSheet, Text, View, ScrollView } from 'react-native';
+import { useEffect, useState } from 'react';
+
+import { Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import { ScreenHeader } from '../../components/ScreenHeader';
 import { COLORS } from '../../services/theme';
@@ -8,11 +11,50 @@ import { useShopStore } from '../../store/useShopStore';
 import { getProductById } from '../../services/catalog';
 
 const WALLET_START = 100000000;
+const PROFILE_NAME_KEY = 'fake-flipkart.profile-name';
 
 export default function ProfileScreen() {
+  const [name, setName] = useState('Guest User');
+  const [draftName, setDraftName] = useState('Guest User');
+  const [isSaving, setIsSaving] = useState(false);
   const walletBalance = useShopStore((state) => state.walletBalance);
   const orders = useShopStore((state) => state.orders);
   const catalog = useShopStore((state) => state.catalog);
+
+  useEffect(() => {
+    let isMounted = true;
+
+    AsyncStorage.getItem(PROFILE_NAME_KEY)
+      .then((storedName) => {
+        if (!isMounted || !storedName?.trim()) {
+          return;
+        }
+
+        const normalizedName = storedName.trim();
+        setName(normalizedName);
+        setDraftName(normalizedName);
+      })
+      .catch(() => {
+        // Keep the default guest name if storage access fails.
+      });
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
+  const handleSaveName = async () => {
+    const nextName = draftName.trim() || 'Guest User';
+    setIsSaving(true);
+
+    try {
+      await AsyncStorage.setItem(PROFILE_NAME_KEY, nextName);
+      setName(nextName);
+      setDraftName(nextName);
+    } finally {
+      setIsSaving(false);
+    }
+  };
 
   const totalSpent = orders.reduce((sum, order) => sum + order.total, 0);
   const highestPurchase = orders.reduce<{ title: string; price: number } | null>(
@@ -41,8 +83,25 @@ export default function ProfileScreen() {
           <View style={styles.avatar}>
             <Ionicons name="person" size={34} color={COLORS.primary} />
           </View>
-          <Text style={styles.name}>Guest User</Text>
+          <Text style={styles.name}>{name}</Text>
           <Text style={styles.subtitle}>Unlimited shopper mode engaged</Text>
+          <View style={styles.nameEditor}>
+            <TextInput
+              value={draftName}
+              onChangeText={setDraftName}
+              placeholder="Enter your name"
+              placeholderTextColor="#9CA3AF"
+              style={styles.nameInput}
+              returnKeyType="done"
+              onSubmitEditing={handleSaveName}
+            />
+            <Pressable
+              onPress={handleSaveName}
+              style={({ pressed }) => [styles.saveButton, pressed && styles.saveButtonPressed]}
+            >
+              <Text style={styles.saveButtonText}>{isSaving ? 'Saving...' : 'Save Name'}</Text>
+            </Pressable>
+          </View>
         </View>
 
         <View style={styles.walletCard}>
@@ -135,6 +194,39 @@ const styles = StyleSheet.create({
     fontSize: 13,
     color: COLORS.muted,
     fontWeight: '700',
+  },
+  nameEditor: {
+    width: '100%',
+    marginTop: 14,
+    gap: 10,
+  },
+  nameInput: {
+    width: '100%',
+    minHeight: 48,
+    borderRadius: 16,
+    backgroundColor: COLORS.card,
+    borderWidth: 1,
+    borderColor: COLORS.border,
+    paddingHorizontal: 14,
+    color: COLORS.text,
+    fontSize: 15,
+    fontWeight: '700',
+  },
+  saveButton: {
+    minHeight: 46,
+    borderRadius: 16,
+    backgroundColor: COLORS.primary,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  saveButtonPressed: {
+    opacity: 0.9,
+    transform: [{ scale: 0.99 }],
+  },
+  saveButtonText: {
+    fontSize: 14,
+    fontWeight: '900',
+    color: COLORS.card,
   },
   walletCard: {
     backgroundColor: COLORS.card,

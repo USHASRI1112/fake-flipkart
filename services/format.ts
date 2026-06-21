@@ -11,3 +11,6 @@ export function formatOrderDate(date = new Date()) {
   });
 }
 
+export function formatCompactCurrency(value: number) {
+  return `₹${value.toLocaleString('en-IN')}`;
+}

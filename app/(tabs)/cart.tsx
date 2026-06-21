@@ -13,11 +13,9 @@ export default function CartScreen() {
   const cart = useShopStore((state) => state.cart);
   const cartCount = useShopStore((state) => state.cartCount);
   const cartTotal = useShopStore((state) => state.cartTotal);
-  const walletBalance = useShopStore((state) => state.walletBalance);
   const catalog = useShopStore((state) => state.catalog);
   const updateQuantity = useShopStore((state) => state.updateQuantity);
   const removeFromCart = useShopStore((state) => state.removeFromCart);
-  const placeOrder = useShopStore((state) => state.placeOrder);
 
   return (
     <View style={styles.screen}>
@@ -60,10 +58,7 @@ export default function CartScreen() {
             <Text style={styles.summaryLabel}>Total</Text>
             <Text style={styles.summaryValue}>{formatCurrency(cartTotal)}</Text>
           </View>
-          <View style={styles.summaryRow}>
-            <Text style={styles.summaryLabel}>Wallet Remaining</Text>
-            <Text style={styles.summaryValue}>{formatCurrency(walletBalance)}</Text>
-          </View>
+          <Text style={styles.summaryHint}>Payment options are shown at checkout.</Text>
         </View>
       </ScrollView>
 
@@ -73,12 +68,11 @@ export default function CartScreen() {
             if (!cart.length) {
               return;
             }
-            placeOrder();
-            router.push('/orders');
+            router.push('/checkout');
           }}
           style={({ pressed }) => [styles.button, pressed && styles.buttonPressed]}
         >
-          <Text style={styles.buttonText}>Place Order</Text>
+          <Text style={styles.buttonText}>Proceed to Checkout</Text>
         </Pressable>
       </View>
     </View>
@@ -128,6 +122,12 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: COLORS.text,
     fontWeight: '900',
+  },
+  summaryHint: {
+    marginTop: 6,
+    fontSize: 12,
+    color: COLORS.muted,
+    fontWeight: '700',
   },
   footer: {
     paddingHorizontal: 16,

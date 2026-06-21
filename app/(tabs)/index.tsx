@@ -7,13 +7,11 @@ import { CategoryCard } from '../../components/CategoryCard';
 import { EmptyState } from '../../components/EmptyState';
 import { ProductCard } from '../../components/ProductCard';
 import { COLORS } from '../../services/theme';
-import { formatCurrency } from '../../services/format';
 import { useShopStore } from '../../store/useShopStore';
 import { getCatalogCategories, getLuxuryProducts, getTrendingProducts } from '../../services/catalog';
 
 export default function HomeScreen() {
   const insets = useSafeAreaInsets();
-  const walletBalance = useShopStore((state) => state.walletBalance);
   const catalog = useShopStore((state) => state.catalog);
   const catalogStatus = useShopStore((state) => state.catalogStatus);
   const categories = getCatalogCategories(catalog);
@@ -45,19 +43,6 @@ export default function HomeScreen() {
           <Text style={styles.searchPillText}>Fast browsing</Text>
         </View>
       </Pressable>
-
-      <View style={styles.walletCard}>
-        <View style={styles.walletTopRow}>
-          <View>
-            <Text style={styles.kicker}>Wallet Balance</Text>
-            <Text style={styles.walletValue}>{formatCurrency(walletBalance)}</Text>
-          </View>
-          <View style={styles.walletIcon}>
-            <MaterialCommunityIcons name="wallet" size={26} color={COLORS.primary} />
-          </View>
-        </View>
-        <Text style={styles.walletCaption}>Unlimited fake spending, fast checkout, luxury energy.</Text>
-      </View>
 
       <View style={styles.sectionHeader}>
         <Text style={styles.sectionTitle}>Categories</Text>
@@ -143,51 +128,6 @@ const styles = StyleSheet.create({
     fontSize: 11,
     fontWeight: '800',
     color: COLORS.text,
-  },
-  walletCard: {
-    backgroundColor: COLORS.card,
-    borderRadius: 24,
-    padding: 18,
-    borderWidth: 1,
-    borderColor: COLORS.border,
-    shadowColor: '#0F172A',
-    shadowOpacity: 0.08,
-    shadowRadius: 16,
-    shadowOffset: { width: 0, height: 8 },
-    elevation: 3,
-    marginBottom: 18,
-  },
-  walletTopRow: {
-    flexDirection: 'row',
-    alignItems: 'flex-start',
-    justifyContent: 'space-between',
-  },
-  walletIcon: {
-    width: 44,
-    height: 44,
-    borderRadius: 14,
-    backgroundColor: '#E9F1FF',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  kicker: {
-    fontSize: 12,
-    textTransform: 'uppercase',
-    letterSpacing: 1,
-    color: COLORS.muted,
-    fontWeight: '700',
-    marginBottom: 6,
-  },
-  walletValue: {
-    fontSize: 28,
-    fontWeight: '900',
-    color: COLORS.text,
-  },
-  walletCaption: {
-    marginTop: 12,
-    color: COLORS.muted,
-    fontSize: 13,
-    lineHeight: 18,
   },
   sectionHeader: {
     flexDirection: 'row',
