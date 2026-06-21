@@ -1,16 +1,22 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 
 import { FlatList, Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { router } from 'expo-router';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { EmptyState } from '../components/EmptyState';
+import { PaginationBar } from '../components/PaginationBar';
 import { ProductCard } from '../components/ProductCard';
 import { COLORS } from '../services/theme';
 import { useShopStore } from '../store/useShopStore';
 
+const PAGE_SIZE = 12;
+
 export default function SearchScreen() {
   const [query, setQuery] = useState('');
+  const [page, setPage] = useState(1);
+  const insets = useSafeAreaInsets();
   const products = useShopStore((state) => state.catalog);
   const catalogStatus = useShopStore((state) => state.catalogStatus);
 
@@ -28,9 +34,19 @@ export default function SearchScreen() {
     });
   }, [products, query]);
 
+  useEffect(() => {
+    setPage(1);
+  }, [query]);
+
+  const visibleProducts = useMemo(
+    () => filteredProducts.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE),
+    [filteredProducts, page],
+  );
+  const totalPages = Math.max(1, Math.ceil(filteredProducts.length / PAGE_SIZE));
+
   return (
     <View style={styles.screen}>
-      <View style={styles.header}>
+      <View style={[styles.header, { paddingTop: insets.top + 12 }]}>
         <Pressable onPress={() => router.back()} style={styles.backButton}>
           <Ionicons name="arrow-back" size={22} color={COLORS.text} />
         </Pressable>
@@ -52,7 +68,7 @@ export default function SearchScreen() {
           <EmptyState
             iconName="refresh"
             title="Loading live catalog"
-            subtitle="Pulling products from DummyJSON..."
+            subtitle="Loading products from your CSV catalog..."
           />
         </View>
       ) : null}
@@ -62,15 +78,18 @@ export default function SearchScreen() {
           <EmptyState
             iconName="search"
             title="No products found"
-            subtitle="Try Lamborghini, Rolex, or iPhone."
+            subtitle="Try clothing, footwear, or jewellery."
           />
         </View>
       ) : (
         <FlatList
-          data={filteredProducts}
+          data={visibleProducts}
           keyExtractor={(item) => item.id}
+          numColumns={2}
+          columnWrapperStyle={styles.columnWrapper}
           contentContainerStyle={styles.list}
-          renderItem={({ item }) => <ProductCard product={item} />}
+          renderItem={({ item }) => <ProductCard product={item} grid />}
+          ListFooterComponent={<PaginationBar page={page} totalPages={totalPages} onChangePage={setPage} />}
         />
       )}
     </View>
@@ -87,7 +106,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 10,
     paddingHorizontal: 16,
-    paddingTop: 12,
     paddingBottom: 10,
   },
   backButton: {
@@ -121,6 +139,9 @@ const styles = StyleSheet.create({
   list: {
     paddingHorizontal: 16,
     paddingBottom: 28,
+    gap: 12,
+  },
+  columnWrapper: {
     gap: 12,
   },
   emptyWrap: {

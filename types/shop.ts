@@ -18,6 +18,8 @@ export type Product = {
   tagline: string;
   description: string;
   badge?: string;
+  brand?: string;
+  discountLabel?: string;
 };
 
 export type Category = {

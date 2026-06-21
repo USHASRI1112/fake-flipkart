@@ -29,7 +29,7 @@ export default function ProfileScreen() {
       return best;
     },
     null,
-  )?.title ?? 'Lamborghini';
+  )?.title ?? 'Featured Item';
 
   const progress = Math.max(0, Math.min(100, (totalSpent / WALLET_START) * 100));
 

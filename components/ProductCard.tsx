@@ -1,18 +1,20 @@
-import { ImageBackground, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { router } from 'expo-router';
 
 import { formatCurrency } from '../services/format';
 import { COLORS } from '../services/theme';
 import type { Product } from '../types/shop';
+import { ProductMedia } from './ProductMedia';
 
 type Props = {
   product: Product;
   compact?: boolean;
+  grid?: boolean;
   onPress?: () => void;
 };
 
-export function ProductCard({ product, compact, onPress }: Props) {
+export function ProductCard({ product, compact, grid, onPress }: Props) {
   const handlePress = () => {
     if (onPress) {
       onPress();
@@ -23,11 +25,17 @@ export function ProductCard({ product, compact, onPress }: Props) {
   };
 
   return (
-    <Pressable onPress={handlePress} style={({ pressed }) => [compact ? styles.compactCard : styles.card, pressed && styles.pressed]}>
+    <Pressable
+      onPress={handlePress}
+      style={({ pressed }) => [
+        grid ? styles.gridCard : compact ? styles.compactCard : styles.card,
+        pressed && styles.pressed,
+      ]}
+    >
       <View style={styles.imageWrap}>
-        <ImageBackground
-          source={{ uri: product.image }}
-          style={compact ? styles.compactImage : styles.image}
+        <ProductMedia
+          product={product}
+          style={grid ? styles.gridImage : compact ? styles.compactImage : styles.image}
           imageStyle={styles.imageRadius}
         >
           <View style={styles.overlay} />
@@ -36,9 +44,9 @@ export function ProductCard({ product, compact, onPress }: Props) {
               <Text style={styles.badgeText}>{product.badge}</Text>
             </View>
           ) : null}
-        </ImageBackground>
+        </ProductMedia>
       </View>
-      <View style={compact ? styles.compactBody : styles.body}>
+      <View style={grid ? styles.gridBody : compact ? styles.compactBody : styles.body}>
         <Text style={styles.title} numberOfLines={1}>
           {product.title}
         </Text>
@@ -86,6 +94,21 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 8 },
     elevation: 3,
   },
+  gridCard: {
+    flex: 1,
+    minWidth: 0,
+    backgroundColor: COLORS.card,
+    borderRadius: 18,
+    overflow: 'hidden',
+    borderWidth: 1,
+    borderColor: COLORS.border,
+    marginRight: 0,
+    shadowColor: '#0F172A',
+    shadowOpacity: 0.08,
+    shadowRadius: 14,
+    shadowOffset: { width: 0, height: 8 },
+    elevation: 3,
+  },
   imageWrap: {
     padding: 10,
   },
@@ -95,6 +118,11 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   compactImage: {
+    height: 120,
+    width: '100%',
+    justifyContent: 'space-between',
+  },
+  gridImage: {
     height: 120,
     width: '100%',
     justifyContent: 'space-between',
@@ -125,6 +153,10 @@ const styles = StyleSheet.create({
     paddingBottom: 14,
   },
   compactBody: {
+    paddingHorizontal: 12,
+    paddingBottom: 12,
+  },
+  gridBody: {
     paddingHorizontal: 12,
     paddingBottom: 12,
   },
@@ -169,4 +201,3 @@ const styles = StyleSheet.create({
     transform: [{ scale: 0.99 }],
   },
 });
-

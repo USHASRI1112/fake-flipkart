@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 
-import { ImageBackground, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
 import { router, useLocalSearchParams } from 'expo-router';
 
@@ -10,6 +10,7 @@ import { formatCurrency } from '../../services/format';
 import { COLORS } from '../../services/theme';
 import { useShopStore } from '../../store/useShopStore';
 import { getProductById } from '../../services/catalog';
+import { ProductMedia } from '../../components/ProductMedia';
 
 export default function ProductScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -26,7 +27,7 @@ export default function ProductScreen() {
           <EmptyState
             iconName="refresh"
             title="Loading live catalog"
-            subtitle="Pulling products from DummyJSON..."
+            subtitle="Loading products from your CSV catalog..."
           />
         </View>
       </View>
@@ -54,14 +55,18 @@ export default function ProductScreen() {
         <ScreenHeader onBack={() => router.back()} />
 
         <View style={styles.imageWrap}>
-          <ImageBackground source={{ uri: product.image }} style={styles.image} imageStyle={styles.imageRadius}>
+          <ProductMedia
+            product={product}
+            style={styles.image}
+            imageStyle={styles.imageRadius}
+          >
             <View style={styles.overlay} />
             {product.badge ? (
               <View style={styles.badge}>
                 <Text style={styles.badgeText}>{product.badge}</Text>
               </View>
             ) : null}
-          </ImageBackground>
+          </ProductMedia>
         </View>
 
         <Text style={styles.title}>{product.title}</Text>

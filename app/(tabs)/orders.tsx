@@ -10,6 +10,7 @@ import { useShopStore } from '../../store/useShopStore';
 export default function OrdersScreen() {
   const orders = useShopStore((state) => state.orders);
   const catalog = useShopStore((state) => state.catalog);
+  console.log('OrdersScreen', orders, catalog);
 
   return (
     <View style={styles.screen}>

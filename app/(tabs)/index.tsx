@@ -1,6 +1,7 @@
 import { FlatList, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
 import { router } from 'expo-router';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { CategoryCard } from '../../components/CategoryCard';
 import { EmptyState } from '../../components/EmptyState';
@@ -11,6 +12,7 @@ import { useShopStore } from '../../store/useShopStore';
 import { getCatalogCategories, getLuxuryProducts, getTrendingProducts } from '../../services/catalog';
 
 export default function HomeScreen() {
+  const insets = useSafeAreaInsets();
   const walletBalance = useShopStore((state) => state.walletBalance);
   const catalog = useShopStore((state) => state.catalog);
   const catalogStatus = useShopStore((state) => state.catalogStatus);
@@ -24,14 +26,18 @@ export default function HomeScreen() {
         <EmptyState
           iconName="refresh"
           title="Loading live catalog"
-          subtitle="Pulling products from DummyJSON..."
+          subtitle="Loading products from your CSV catalog..."
         />
       </View>
     );
   }
 
   return (
-    <ScrollView style={styles.screen} contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
+    <ScrollView
+      style={styles.screen}
+      contentContainerStyle={[styles.content, { paddingTop: insets.top + 12 }]}
+      showsVerticalScrollIndicator={false}
+    >
       <Pressable onPress={() => router.push('/search')} style={styles.searchHero}>
         <Ionicons name="search" size={20} color={COLORS.primary} />
         <Text style={styles.searchText}>Search Products</Text>
@@ -77,8 +83,8 @@ export default function HomeScreen() {
       />
 
       <View style={styles.sectionHeader}>
-        <Text style={styles.sectionTitle}>Luxury Products</Text>
-        <Text style={styles.sectionLink}>Big ticket items</Text>
+        <Text style={styles.sectionTitle}>Top Deals</Text>
+        <Text style={styles.sectionLink}>Best picks</Text>
       </View>
       <FlatList
         data={luxuryProducts}
@@ -89,7 +95,7 @@ export default function HomeScreen() {
         renderItem={({ item }) => <ProductCard product={item} compact />}
       />
       {catalogStatus === 'loading' ? (
-        <Text style={styles.loadingText}>Loading live catalog...</Text>
+        <Text style={styles.loadingText}>Loading more products...</Text>
       ) : null}
     </ScrollView>
   );
@@ -102,7 +108,6 @@ const styles = StyleSheet.create({
   },
   content: {
     paddingHorizontal: 16,
-    paddingTop: 12,
     paddingBottom: 28,
   },
   searchHero: {

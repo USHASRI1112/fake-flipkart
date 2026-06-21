@@ -1,173 +1,127 @@
+import catalogData from '../store/catalog.generated.json';
 import type { Category, Product } from '../types/shop';
 
 export type CatalogProduct = Product;
 
-type DummyJsonProduct = {
-  id: number;
-  title: string;
-  description: string;
-  category: string;
-  price: number;
-  rating: number;
-  thumbnail: string;
-  images: string[];
-  discountPercentage: number;
-  stock: number;
-  availabilityStatus: string;
-  brand?: string;
-};
+const CATALOG_PRODUCTS = catalogData as CatalogProduct[];
 
-type DummyJsonProductsResponse = {
-  products: DummyJsonProduct[];
-  total: number;
-  skip: number;
-  limit: number;
-};
-
-const DUMMYJSON_BASE = 'https://dummyjson.com';
-
-type CategoryGroupId =
-  | 'food'
-  | 'mobiles'
-  | 'fashion'
-  | 'cars'
-  | 'bikes'
-  | 'jewelry'
-  | 'luxury'
-  | 'electronics';
-
-type CategoryGroup = {
-  id: CategoryGroupId;
+type CategoryMeta = {
   name: string;
   icon: string;
   tint: string;
-  rawCategories: readonly string[];
 };
 
-const CATEGORY_GROUPS: CategoryGroup[] = [
-  { id: 'food', name: 'Food', icon: 'restaurant', tint: '#F97316', rawCategories: ['groceries'] },
-  {
-    id: 'mobiles',
-    name: 'Mobiles',
-    icon: 'smartphone',
-    tint: '#2874F0',
-    rawCategories: ['smartphones', 'mobile-accessories', 'tablets'],
-  },
-  {
-    id: 'fashion',
-    name: 'Fashion',
-    icon: 'checkroom',
-    tint: '#DB2777',
-    rawCategories: [
-      'womens-dresses',
-      'womens-shoes',
-      'womens-bags',
-      'womens-jewellery',
-      'mens-shirts',
-      'mens-shoes',
-      'mens-watches',
-      'tops',
-      'sunglasses',
-    ],
-  },
-  { id: 'cars', name: 'Cars', icon: 'directions-car', tint: '#111827', rawCategories: ['vehicle'] },
-  { id: 'bikes', name: 'Bikes', icon: 'two-wheeler', tint: '#059669', rawCategories: ['motorcycle'] },
-  {
-    id: 'jewelry',
-    name: 'Jewelry',
-    icon: 'diamond',
-    tint: '#B45309',
-    rawCategories: ['womens-jewellery', 'mens-watches', 'womens-watches'],
-  },
-  {
-    id: 'luxury',
-    name: 'Luxury',
-    icon: 'card-giftcard',
-    tint: '#7C3AED',
-    rawCategories: [],
-  },
-  {
-    id: 'electronics',
-    name: 'Electronics',
-    icon: 'devices',
-    tint: '#0F766E',
-    rawCategories: ['laptops', 'mobile-accessories', 'smartphones', 'tablets'],
-  },
-];
+const CATEGORY_META: Record<string, CategoryMeta> = {
+  clothing: { name: 'Clothing', icon: 'checkroom', tint: '#DB2777' },
+  jewellery: { name: 'Jewellery', icon: 'diamond', tint: '#B45309' },
+  footwear: { name: 'Footwear', icon: 'two-wheeler', tint: '#059669' },
+  'mobiles-accessories': { name: 'Mobiles & Accessories', icon: 'smartphone', tint: '#2874F0' },
+  automotive: { name: 'Automotive', icon: 'directions-car', tint: '#111827' },
+  'home-decor-festive-needs': { name: 'Home Decor', icon: 'home', tint: '#7C3AED' },
+  'beauty-and-personal-care': { name: 'Beauty', icon: 'spa', tint: '#F97316' },
+  'home-furnishing': { name: 'Home Furnishing', icon: 'weekend', tint: '#0F766E' },
+  'kitchen-dining': { name: 'Kitchen & Dining', icon: 'restaurant', tint: '#F59E0B' },
+  computers: { name: 'Computers', icon: 'devices', tint: '#0EA5E9' },
+  watches: { name: 'Watches', icon: 'watch', tint: '#7C3AED' },
+  'baby-care': { name: 'Baby Care', icon: 'child-care', tint: '#EC4899' },
+  'tools-hardware': { name: 'Tools & Hardware', icon: 'handyman', tint: '#6B7280' },
+  'toys-school-supplies': { name: 'Toys & School Supplies', icon: 'toys', tint: '#2563EB' },
+  'health-personal-care': { name: 'Health', icon: 'health-and-safety', tint: '#16A34A' },
+  'bags-wallets-belts': { name: 'Bags', icon: 'workspaces', tint: '#8B5CF6' },
+  sports: { name: 'Sports', icon: 'sports-soccer', tint: '#F97316' },
+  stationery: { name: 'Stationery', icon: 'edit', tint: '#14B8A6' },
+  furniture: { name: 'Furniture', icon: 'weekend', tint: '#A16207' },
+  misc: { name: 'More', icon: 'apps', tint: '#4B5563' },
+};
 
 function titleCase(value: string) {
   return value
-    .split('-')
+    .split(/[-_ ]+/)
+    .filter(Boolean)
     .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
     .join(' ');
 }
 
-function isLuxuryProduct(rawProduct: DummyJsonProduct) {
-  return rawProduct.price >= 1000 || rawProduct.discountPercentage >= 25 || rawProduct.rating >= 4.8;
+function slugify(value: string) {
+  return value
+    .toLowerCase()
+    .replace(/&/g, 'and')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
 }
 
-function inferCategoryGroup(rawCategory: string, rawProduct?: DummyJsonProduct): CategoryGroupId {
-  const matched = CATEGORY_GROUPS.find(
-    (group) => group.rawCategories.length > 0 && group.rawCategories.includes(rawCategory),
+function parseBreadcrumbs(rawCategory: string) {
+  return rawCategory
+    .split('>')
+    .map((part) => part.trim())
+    .filter(Boolean);
+}
+
+function shouldExcludeProduct(product: Product) {
+  const breadcrumbs = parseBreadcrumbs(product.rawCategory);
+  const lowerTitle = product.title.toLowerCase();
+  const lowerBrand = (product.brand || '').toLowerCase();
+  return (
+    product.categoryId === 'clothing' &&
+    (
+      breadcrumbs.some((part) => part.toLowerCase() === 'bras') ||
+      lowerTitle.includes('clovia') ||
+      lowerBrand.includes('clovia') ||
+      breadcrumbs.some((part) => part.toLowerCase().includes('clovia')) ||
+      product.rawCategory.toLowerCase().includes('clovia')
+    )
   );
-
-  if (matched) {
-    return matched.id;
-  }
-
-  if (rawProduct && isLuxuryProduct(rawProduct)) {
-    return 'luxury';
-  }
-
-  return 'electronics';
 }
 
-function buildTagline(rawProduct: DummyJsonProduct) {
-  const brand = rawProduct.brand ? `${rawProduct.brand} • ` : '';
-  const discount = rawProduct.discountPercentage > 0 ? `${Math.round(rawProduct.discountPercentage)}% off` : '';
-  return `${brand}${discount || rawProduct.availabilityStatus}`.trim();
+function iconForCategory(categoryId: string) {
+  return CATEGORY_META[categoryId]?.icon ?? 'apps';
 }
 
-function mapRawProduct(rawProduct: DummyJsonProduct): Product {
-  const categoryId = inferCategoryGroup(rawProduct.category, rawProduct);
-  const category = CATEGORY_GROUPS.find((group) => group.id === categoryId)?.name ?? titleCase(rawProduct.category);
+function tintForCategory(categoryId: string) {
+  return CATEGORY_META[categoryId]?.tint ?? '#4B5563';
+}
 
-  return {
-    id: String(rawProduct.id),
-    title: rawProduct.title,
-    category,
-    categoryId,
-    rawCategory: rawProduct.category,
-    price: Math.round(rawProduct.price),
-    rating: rawProduct.rating,
-    image: rawProduct.thumbnail || rawProduct.images[0] || '',
-    tagline: buildTagline(rawProduct),
-    description: rawProduct.description,
-    badge:
-      rawProduct.discountPercentage >= 20
-        ? 'Hot Deal'
-        : isLuxuryProduct(rawProduct)
-          ? 'Luxury'
-          : undefined,
-  };
+function nameForCategory(categoryId: string) {
+  return CATEGORY_META[categoryId]?.name ?? titleCase(categoryId);
+}
+
+function isFeaturedProduct(product: CatalogProduct) {
+  return product.badge === 'Hot Deal' || product.badge === 'Top Rated' || product.rating >= 4.7;
+}
+
+function scoreProduct(product: CatalogProduct) {
+  let score = 0;
+  if (product.image) score += 4;
+  if (product.rating >= 4) score += 3;
+  if (product.badge) score += 2;
+  if (product.price > 5000) score += 1;
+  return score;
 }
 
 export async function fetchCatalogProducts() {
-  const response = await fetch(`${DUMMYJSON_BASE}/products?limit=0`);
-  if (!response.ok) {
-    throw new Error(`Failed to load products (${response.status})`);
-  }
-
-  const json = (await response.json()) as DummyJsonProductsResponse;
-  return json.products.map(mapRawProduct);
+  return CATALOG_PRODUCTS;
 }
 
 export function getCatalogCategories(products: Product[]) {
-  const availableGroupIds = new Set(products.map((product) => product.categoryId));
+  const counts = new Map<string, number>();
 
-  return CATEGORY_GROUPS.filter((group) =>
-    group.id === 'luxury' ? true : availableGroupIds.has(group.id),
-  ).map(({ id, name, icon, tint }) => ({ id, name, icon, tint })) as Category[];
+  for (const product of products) {
+    if (shouldExcludeProduct(product)) {
+      continue;
+    }
+
+    counts.set(product.categoryId, (counts.get(product.categoryId) ?? 0) + 1);
+  }
+
+  return [...counts.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 8)
+    .map(([id]) => ({
+      id,
+      name: nameForCategory(id),
+      icon: iconForCategory(id),
+      tint: tintForCategory(id),
+    })) as Category[];
 }
 
 export function getProductById(products: Product[], id: string) {
@@ -175,21 +129,97 @@ export function getProductById(products: Product[], id: string) {
 }
 
 export function getProductsForCategory(products: Product[], categoryId: string) {
-  if (categoryId === 'luxury') {
-    return products.filter((product) => product.categoryId === 'luxury');
+  return products.filter((product) => product.categoryId === categoryId && !shouldExcludeProduct(product));
+}
+
+export function getProductSubcategory(product: Product) {
+  const breadcrumbs = parseBreadcrumbs(product.rawCategory);
+  const candidate = breadcrumbs[1] || breadcrumbs[breadcrumbs.length - 2] || breadcrumbs[0] || 'All';
+  return {
+    id: slugify(candidate || 'all'),
+    name: candidate || 'All',
+  };
+}
+
+export function getCategorySubcategories(products: Product[], categoryId: string) {
+  const counts = new Map<string, { id: string; name: string; count: number }>();
+
+  for (const product of products) {
+    if (product.categoryId !== categoryId) {
+      continue;
+    }
+
+    if (shouldExcludeProduct(product)) {
+      continue;
+    }
+
+    const subcategory = getProductSubcategory(product);
+    const existing = counts.get(subcategory.id);
+
+    if (existing) {
+      existing.count += 1;
+    } else {
+      counts.set(subcategory.id, { ...subcategory, count: 1 });
+    }
   }
 
-  return products.filter((product) => product.categoryId === categoryId);
+  return [...counts.values()].sort((a, b) => b.count - a.count).slice(0, 12);
+}
+
+export function filterCategoryProducts(
+  products: Product[],
+  categoryId: string,
+  options?: {
+    subcategoryId?: string;
+    query?: string;
+  },
+) {
+  const normalizedQuery = options?.query?.trim().toLowerCase() ?? '';
+
+  return products.filter((product) => {
+    if (product.categoryId !== categoryId) {
+      return false;
+    }
+
+    if (shouldExcludeProduct(product)) {
+      return false;
+    }
+
+    if (options?.subcategoryId && options.subcategoryId !== 'all') {
+      const subcategory = getProductSubcategory(product);
+      if (subcategory.id !== options.subcategoryId) {
+        return false;
+      }
+    }
+
+    if (normalizedQuery) {
+      const haystack = [
+        product.title,
+        product.category,
+        product.rawCategory,
+        product.tagline,
+        product.description,
+      ]
+        .join(' ')
+        .toLowerCase();
+
+      if (!haystack.includes(normalizedQuery)) {
+        return false;
+      }
+    }
+
+    return true;
+  });
 }
 
 export function getLuxuryProducts(products: Product[]) {
-  return products.filter((product) => product.categoryId === 'luxury');
+  return [...products].filter(isFeaturedProduct).sort((a, b) => scoreProduct(b) - scoreProduct(a)).slice(0, 12);
 }
 
 export function getTrendingProducts(products: Product[]) {
-  return [...products].sort((a, b) => b.rating - a.rating).slice(0, 4);
+  return [...products].sort((a, b) => scoreProduct(b) - scoreProduct(a)).slice(0, 4);
 }
 
 export function getCategoryTitle(categoryId: string) {
-  return CATEGORY_GROUPS.find((group) => group.id === categoryId)?.name ?? titleCase(categoryId);
+  return nameForCategory(categoryId);
 }

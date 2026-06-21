@@ -1,5 +1,6 @@
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { COLORS } from '../services/theme';
 
@@ -11,8 +12,10 @@ type Props = {
 };
 
 export function ScreenHeader({ title, subtitle, onBack, rightLabel }: Props) {
+  const insets = useSafeAreaInsets();
+
   return (
-    <View style={styles.wrap}>
+    <View style={[styles.wrap, { paddingTop: insets.top + 12 }]}>
       <View style={styles.row}>
         {onBack ? (
           <Pressable onPress={onBack} style={styles.backButton}>
@@ -34,7 +37,6 @@ export function ScreenHeader({ title, subtitle, onBack, rightLabel }: Props) {
 const styles = StyleSheet.create({
   wrap: {
     paddingHorizontal: 16,
-    paddingTop: 12,
     paddingBottom: 8,
   },
   row: {
@@ -79,4 +81,3 @@ const styles = StyleSheet.create({
     width: 44,
   },
 });
-

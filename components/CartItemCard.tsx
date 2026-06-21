@@ -1,9 +1,10 @@
-import { ImageBackground, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
 import { formatCurrency } from '../services/format';
 import { COLORS } from '../services/theme';
 import type { Product } from '../types/shop';
+import { ProductMedia } from './ProductMedia';
 
 type Props = {
   product: Product;
@@ -16,7 +17,11 @@ type Props = {
 export function CartItemCard({ product, quantity, onDecrease, onIncrease, onDelete }: Props) {
   return (
     <View style={styles.card}>
-      <ImageBackground source={{ uri: product.image }} style={styles.image} imageStyle={styles.imageRadius} />
+      <ProductMedia
+        product={product}
+        style={styles.image}
+        imageStyle={styles.imageRadius}
+      />
       <View style={styles.body}>
         <Text style={styles.title}>{product.title}</Text>
         <Text style={styles.tagline}>{product.tagline}</Text>
@@ -115,4 +120,3 @@ const styles = StyleSheet.create({
     fontSize: 12,
   },
 });
-

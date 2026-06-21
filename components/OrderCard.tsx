@@ -1,9 +1,10 @@
-import { ImageBackground, StyleSheet, Text, View } from 'react-native';
+import { Image, ImageBackground, StyleSheet, Text, View } from 'react-native';
 
 import { formatCurrency } from '../services/format';
 import { COLORS } from '../services/theme';
 import type { Order, OrderStatus, Product } from '../types/shop';
 import { StatusChip } from './StatusChip';
+import { ProductMedia } from './ProductMedia';
 
 const ORDER_STATUSES: OrderStatus[] = [
   'Order Placed',
@@ -21,10 +22,15 @@ type Props = {
 
 export function OrderCard({ order, product }: Props) {
   const status = ORDER_STATUSES[order.statusIndex];
-
+  console.log('OrderCard', order, product, status);
   return (
     <View style={styles.card}>
-      <ImageBackground source={{ uri: product.image }} style={styles.image} imageStyle={styles.imageRadius} />
+      {/* <ProductMedia
+        product={product}
+        style={styles.image}
+        imageStyle={styles.imageRadius}
+      /> */}
+      <Image source={{uri: product.image}} style={styles.imageRadius} />
       <View style={styles.body}>
         <Text style={styles.title}>{product.title}</Text>
         <Text style={styles.price}>
@@ -127,4 +133,3 @@ const styles = StyleSheet.create({
     fontWeight: '800',
   },
 });
-
