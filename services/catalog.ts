@@ -17,6 +17,7 @@ const CATEGORY_META: Record<string, CategoryMeta> = {
   clothing: { name: 'Clothing', icon: 'checkroom', tint: '#DB2777' },
   jewellery: { name: 'Jewellery', icon: 'diamond', tint: '#B45309' },
   footwear: { name: 'Footwear', icon: 'two-wheeler', tint: '#059669' },
+  smartphone: { name: 'Mobiles & Accessories', icon: 'smartphone', tint: '#2874F0' },
   'mobiles-and-accessories': { name: 'Mobiles & Accessories', icon: 'smartphone', tint: '#2874F0' },
   'mobiles-accessories': { name: 'Mobiles & Accessories', icon: 'smartphone', tint: '#2874F0' },
   automotive: { name: 'Automotive', icon: 'directions-car', tint: '#111827' },

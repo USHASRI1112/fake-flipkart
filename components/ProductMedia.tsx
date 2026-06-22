@@ -3,7 +3,6 @@ import { Image, StyleSheet, Text, View } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
 import { COLORS } from '../services/theme';
-import { getProductFallbackImageUri } from '../services/productImage';
 import type { Product } from '../types/shop';
 
 type Props = {
@@ -31,7 +30,6 @@ function normalizeImageUri(rawValue: string) {
 export function ProductMedia({ product, style, imageStyle, children }: Props) {
   const [imageFailed, setImageFailed] = useState(false);
   const imageUri = normalizeImageUri(product.image);
-  const fallbackUri = getProductFallbackImageUri(product);
 
   useEffect(() => {
     setImageFailed(false);
@@ -40,13 +38,13 @@ export function ProductMedia({ product, style, imageStyle, children }: Props) {
   if (imageFailed || !imageUri) {
     return (
       <View style={[styles.fallback, style]}>
-        <Image
-          source={{ uri: fallbackUri }}
-          style={[StyleSheet.absoluteFillObject, imageStyle]}
-          resizeMode="cover"
-        />
+        <View style={[styles.fallbackBase, imageStyle]} />
         <View style={styles.fallbackGlow} />
-        <Ionicons name="image-outline" size={30} color={COLORS.primary} />
+        <View style={styles.fallbackOrbOne} />
+        <View style={styles.fallbackOrbTwo} />
+        <View style={styles.fallbackCard}>
+          <Ionicons name="image-outline" size={28} color={COLORS.card} />
+        </View>
         <Text style={styles.fallbackTitle} numberOfLines={2}>
           {product.title}
         </Text>
@@ -75,12 +73,46 @@ const styles = StyleSheet.create({
   fallback: {
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#EEF2FF',
     overflow: 'hidden',
+  },
+  fallbackBase: {
+    ...StyleSheet.absoluteFillObject,
+    backgroundColor: '#DDEAFE',
   },
   fallbackGlow: {
     ...StyleSheet.absoluteFillObject,
     backgroundColor: 'rgba(40,116,240,0.08)',
+  },
+  fallbackOrbOne: {
+    position: 'absolute',
+    width: 92,
+    height: 92,
+    borderRadius: 92,
+    backgroundColor: 'rgba(255,255,255,0.22)',
+    top: 12,
+    right: 12,
+  },
+  fallbackOrbTwo: {
+    position: 'absolute',
+    width: 132,
+    height: 132,
+    borderRadius: 132,
+    backgroundColor: 'rgba(255,255,255,0.12)',
+    left: -24,
+    bottom: -24,
+  },
+  fallbackCard: {
+    width: 62,
+    height: 62,
+    borderRadius: 20,
+    backgroundColor: COLORS.primary,
+    alignItems: 'center',
+    justifyContent: 'center',
+    shadowColor: '#0F172A',
+    shadowOpacity: 0.16,
+    shadowRadius: 10,
+    shadowOffset: { width: 0, height: 6 },
+    elevation: 3,
   },
   fallbackTitle: {
     marginTop: 8,
