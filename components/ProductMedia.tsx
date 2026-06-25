@@ -28,14 +28,19 @@ function normalizeImageUri(rawValue: string) {
 }
 
 export function ProductMedia({ product, style, imageStyle, children }: Props) {
-  const [imageFailed, setImageFailed] = useState(false);
-  const imageUri = normalizeImageUri(product.image);
+  const [sourceMode, setSourceMode] = useState<'url' | 'base64' | 'failed'>('url');
+  const imageUri = normalizeImageUri(product.imageUrl || product.image);
+  const imageBase64 = String(product.imageBase64 || '').trim();
+  const imageBase64Uri = imageBase64 ? `data:image/jpeg;base64,${imageBase64}` : '';
 
   useEffect(() => {
-    setImageFailed(false);
-  }, [product.id, product.image]);
+    setSourceMode('url');
+  }, [product.id, product.image, product.imageUrl, product.imageBase64]);
 
-  if (imageFailed || !imageUri) {
+  const resolvedSource =
+    sourceMode === 'url' ? imageUri : sourceMode === 'base64' ? imageBase64Uri : '';
+
+  if (!resolvedSource) {
     return (
       <View style={[styles.fallback, style]}>
         <View style={[styles.fallbackBase, imageStyle]} />
@@ -59,10 +64,17 @@ export function ProductMedia({ product, style, imageStyle, children }: Props) {
   return (
     <View style={style}>
       <Image
-        source={{ uri: imageUri }}
+        source={{ uri: resolvedSource }}
         style={[StyleSheet.absoluteFillObject, imageStyle]}
         resizeMode="cover"
-        onError={() => setImageFailed(true)}
+        onError={() => {
+          if (sourceMode === 'url' && imageBase64Uri) {
+            setSourceMode('base64');
+            return;
+          }
+
+          setSourceMode('failed');
+        }}
       />
       {children}
     </View>

@@ -1,0 +1,2880 @@
+{
+  "total": 31563,
+  "page": 36,
+  "page_size": 30,
+  "total_pages": 1053,
+  "has_next": true,
+  "has_previous": true,
+  "devices": [
+    {
+      "id": 1079,
+      "name": "Excite 7c AT7-B8",
+      "manufacturer": {
+        "id": 107,
+        "name": "Toshiba",
+        "logo_b64": null,
+        "website_url": null
+      },
+      "manufacturer_name": "Toshiba",
+      "device_type": "phone",
+      "description": "Toshiba Excite 7c AT7-B8 Android tablet. Announced Feb 2014. Features 7.0″  display, Rockchip RK3168 chipset, 3500 mAh battery, 8 GB storage, 1000 MB RAM.",
+      "colors": "Black/Silver",
+      "storage": "8GB",
+      "screen_resolution": "7.0\", 600x1024 pixels",
+      "weight": "354.4g",
+      "thickness": "10.9mm",
+      "release_date": "Released 2014, February",
+      "camera": "0.3MP",
+      "battery_capacity": "3500 mAh",
+      "hardware": "1GB RAM, Rockchip RK3168",
+      "image_b64": "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",
+      "image_url": "https://api.mobileapi.dev/devices/1079/thumb.png",
+      "network": {
+        "id": 357,
+        "technology": "No cellular connectivity",
+        "bands_2g": "N/A",
+        "bands_3g": "",
+        "bands_4g": "",
+        "bands_5g": "",
+        "speed": ""
+      },
+      "body": {
+        "id": 349,
+        "dimensions": "199 x 119.8 x 10.9 mm (7.83 x 4.72 x 0.43 in)",
+        "weight": "354.4 g (12.49 oz)",
+        "build": "",
+        "sim": "No",
+        "other": ""
+      },
+      "display": {
+        "id": 356,
+        "type": "IPS LCD",
+        "size": "7.0 inches, 137.9 cm2(~57.8% screen-to-body ratio)",
+        "resolution": "600 x 1024 pixels, 16:9 ratio (~170 ppi density)",
+        "protection": "",
+        "other": ""
+      },
+      "platform": {
+        "id": 350,
+        "os": "Android 4.2.2 (Jelly Bean)",
+        "chipset": "Rockchip RK3168",
+        "cpu": "Dual-core 1.5 GHz Cortex-A9",
+        "gpu": ""
+      },
+      "memory": {
+        "id": 349,
+        "card_slot": "microSD (dedicated slot)",
+        "internal": "8GB 1GB RAM",
+        "other": ""
+      },
+      "main_camera": {
+        "id": 351,
+        "modules": "VGA",
+        "features": "",
+        "video": "Yes"
+      },
+      "selfie_camera": {
+        "id": 350,
+        "modules": "No",
+        "features": "",
+        "video": ""
+      },
+      "sound": {
+        "id": 357,
+        "loudspeaker": "Yes",
+        "audio_jack": "Yes"
+      },
+      "comms": {
+        "id": 356,
+        "wlan": "Wi-Fi 802.11 b/g/n",
+        "bluetooth": "4.0, A2DP",
+        "positioning": "No",
+        "nfc": "No",
+        "radio": "No",
+        "usb": "microUSB 2.0"
+      },
+      "features": {
+        "id": 336,
+        "sensors": "Accelerometer",
+        "other": ""
+      },
+      "battery": {
+        "id": 353,
+        "type": "Li-Po 3500 mAh, non-removable (13 Wh)",
+        "charging": ""
+      },
+      "misc": {
+        "id": 350,
+        "model_numbers": "",
+        "sar_us": "",
+        "sar_eu": "",
+        "price": "About 70 EUR"
+      }
+    },
+    {
+      "id": 20442,
+      "name": "Fly DS111",
+      "manufacturer": {
+        "id": 132,
+        "name": "Fly",
+        "logo_b64": null,
+        "website_url": null
+      },
+      "manufacturer_name": "Fly",
+      "device_type": "phone",
+      "description": "",
+      "colors": "",
+      "storage": "0 MBBuy memory card",
+      "screen_resolution": "1.77\", 128 x 160 pixels",
+      "weight": "65.00",
+      "thickness": "11.10mm",
+      "release_date": "",
+      "camera": "",
+      "battery_capacity": "600 mAh",
+      "hardware": "",
+      "image_b64": "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",
+      "image_url": "https://api.mobileapi.dev/devices/20442/thumb.png",
+      "network": null,
+      "body": {
+        "id": 19797,
+        "dimensions": "106.50 x 46.00 x 11.10 mm",
+        "weight": "65.00 g",
+        "build": "",
+        "sim": "",
+        "other": ""
+      },
+      "display": {
+        "id": 19847,
+        "type": "Color / TFT64k colors128 x 160 px (1.77\")",
+        "size": "1.77 inches",
+        "resolution": "128 x 160 pixels",
+        "protection": "",
+        "other": ""
+      },
+      "platform": null,
+      "memory": {
+        "id": 19859,
+        "card_slot": "microSD, microSDHC (up to 16 GB)",
+        "internal": "0 MBBuy memory card",
+        "other": ""
+      },
+      "main_camera": null,
+      "selfie_camera": null,
+      "sound": null,
+      "comms": null,
+      "features": null,
+      "battery": {
+        "id": 19676,
+        "type": "Li-Ion 600 mAh",
+        "charging": ""
+      },
+      "misc": null
+    },
+    {
+      "id": 1086,
+      "name": "Vibe",
+      "manufacturer": {
+        "id": 38,
+        "name": "HMD",
+        "logo_b64": null,
+        "website_url": null
+      },
+      "manufacturer_name": "HMD",
+      "device_type": "phone",
+      "description": "HMD Vibe 5G Android smartphone. Announced Sep 2025. Features 6.67″  display, Unisoc T760 chipset, 5000 mAh battery, 128 GB storage, 4 GB RAM.",
+      "colors": "Black, Purple",
+      "storage": "128GB",
+      "screen_resolution": "6.67\", 720x1604 pixels",
+      "weight": "190g",
+      "thickness": "8.7mm",
+      "release_date": "Released 2025, September 11",
+      "camera": "50MP",
+      "battery_capacity": "5000 mAh",
+      "hardware": "4GB RAM, Unisoc T760",
+      "image_b64": "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",
+      "image_url": "https://api.mobileapi.dev/devices/1086/thumb.png",
+      "network": {
+        "id": 364,
+        "technology": "GSM / HSPA / LTE / 5G",
+        "bands_2g": "GSM 850 / 900 / 1800 / 1900",
+        "bands_3g": "HSDPA 850 / 900 / 2100",
+        "bands_4g": "1, 3, 5, 8, 28, 40, 41",
+        "bands_5g": "1, 3, 5, 8, 28, 40, 41, 77, 78 SA/NSA",
+        "speed": "HSPA, LTE"
+      },
+      "body": {
+        "id": 356,
+        "dimensions": "165 x 75.8 x 8.7 mm (6.50 x 2.98 x 0.34 in)",
+        "weight": "190 g (6.70 oz)",
+        "build": "Glass front, plastic frame, plastic back",
+        "sim": "Nano-SIM + Nano-SIM",
+        "other": "Dust and splash resistantXpress-On back panel covers"
+      },
+      "display": {
+        "id": 363,
+        "type": "IPS LCD, 90Hz",
+        "size": "6.67 inches, 107.2 cm2(~85.7% screen-to-body ratio)",
+        "resolution": "720 x 1604 pixels, 20:9 ratio (~264 ppi density)",
+        "protection": "",
+        "other": ""
+      },
+      "platform": {
+        "id": 357,
+        "os": "Android 15",
+        "chipset": "Unisoc T760 (6 nm)",
+        "cpu": "Octa-core (1x2.2 GHz Cortex-A76 & 3x Cortex-A76 & 4x Cortex-A55)",
+        "gpu": "Mali-G57"
+      },
+      "memory": {
+        "id": 356,
+        "card_slot": "microSDXC",
+        "internal": "128GB 4GB RAM",
+        "other": ""
+      },
+      "main_camera": {
+        "id": 358,
+        "modules": "50 MP, (wide)2 MP, (depth)",
+        "features": "LED flash, HDR",
+        "video": "1080p@30fps"
+      },
+      "selfie_camera": {
+        "id": 357,
+        "modules": "8 MP",
+        "features": "",
+        "video": "Yes"
+      },
+      "sound": {
+        "id": 364,
+        "loudspeaker": "Yes, with dual speakers",
+        "audio_jack": "Yes"
+      },
+      "comms": {
+        "id": 363,
+        "wlan": "Wi-Fi 802.11 a/b/g/n",
+        "bluetooth": "5.2, A2DP, LE",
+        "positioning": "GPS, GLONASS",
+        "nfc": "No",
+        "radio": "Unspecified",
+        "usb": "USB Type-C 2.0"
+      },
+      "features": {
+        "id": 343,
+        "sensors": "Fingerprint (side-mounted), accelerometer, proximity",
+        "other": ""
+      },
+      "battery": {
+        "id": 360,
+        "type": "5000 mAh",
+        "charging": "18W wired"
+      },
+      "misc": {
+        "id": 356,
+        "model_numbers": "",
+        "sar_us": "",
+        "sar_eu": "",
+        "price": "About 90 EUR"
+      }
+    },
+    {
+      "id": 26235,
+      "name": "Kenxinda V7",
+      "manufacturer": {
+        "id": 285,
+        "name": "Kenxinda",
+        "logo_b64": null,
+        "website_url": null
+      },
+      "manufacturer_name": "Kenxinda",
+      "device_type": "phone",
+      "description": "",
+      "colors": "",
+      "storage": "16 GBBuy memory card",
+      "screen_resolution": "5.00\", 720 x 1280 pixels",
+      "weight": "192.00",
+      "thickness": "7.90mm",
+      "release_date": "4Q 2017",
+      "camera": "",
+      "battery_capacity": "2250 mAh",
+      "hardware": "2 GB RAM, MediaTek MT6735",
+      "image_b64": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCABkAE4DASIAAhEBAxEB/8QAHQAAAQUAAwEAAAAAAAAAAAAABQAEBgcIAgMJAf/EAEwQAAECBAMDBQoICwkBAAAAAAECAwAEBREGEiExQVEHCBMisRQVJDI0YXFykZQjUnOBs8HR0hclNUNTVWJjdZKhMzZCRVaCk5Xh8P/EABsBAAEFAQEAAAAAAAAAAAAAAAABAwQFBgIH/8QAKREAAgEDAwMDBAMAAAAAAAAAAAECAwQREjEyBRMhQVGBFCKR8FJx0f/aAAwDAQACEQMRAD8Avuu1PED1VdU3VHpdq2ZDbRygDhptMQTCvKZMYlxLPUKnVipKfk2BMLV0t0hJVlsr4qr7vTwMT+eVaaIyp0QnW2uyBkrJU+SemX5OnSUs7NL6SYW0wlCnlfGWR4x85iPnfJdRh4jhLH9HE1DEY/zmd/5YYztbxGh9pkVudSXFpQCXDpc2gqtz9hHsiPV9wiclSEoBDqSCB54RN+45JRS4r8FySdG6KWbbdqlSeWEjMtUyQVHjpHyfk25SSfmu6Ku+GW1OdGy8pbi7C+VKd6jawG8xiFznD8r6VqAxOxYEgfi5jj6scDzi+V//AFMx/wBcx92JOMFFrb9TZkzPNMsS7vcmK3OnYS+EttLUpGYXyKAOixvG6E9MhuSkZopxMrut5LQaS2suM5r9ZxI8RItqo7LiMSV3nK8sEpTluoxOwF3CU3psvvPqcLxH5XnRcszswht7GEsw2Tqs0qXIT8wRAGpnoYZFV/yjUPeDDabn3qIUrU+7NMuXGR1VylXEHbbzRg+e5yPKtLyjbrfKXT5h5cu06WkUVvqqUAVNklu2ZNyOBtFtcgXKXinHeNapSK9itrEMhKU5Mw0tEi1L5HC5lPiDXSx/3cQYNL0toI1F3Iwfr+/BdlRPhh9RPZDRRh1UvLD6ieyGajEV7l9DijgsxH6/5ZKj96ntg8o74j9e1n5QfvkdsCCfEyJPSRbW4qxtmNvbHOk0N2poUpEwyyS6GGUuBRLrpSVBAsDbRO06XI4xY1cwsplkvsozsOXVcC+bXdw/+vAKRps7KMvLk35JtJWFpMwgnIsJKQtJt1VWUR9WgtoK9n4zExdvfRnuyuuUjDtQp1HpT5IeROpU8lKG13yhtKyoEiy0gL1UNAQQdkD5Hk/np2pCRlZ+XmFpLrbwZadcWh5ooC2wgJuu3SJOZOlgo/4YkOPX5ycmZenvTtGKNjjqQfHLQQFucCEgAEDbraBc1VaoysGYn8OPNPf27KE3S6ta0KU6u1utdtBJBHi7NTevnRlEsYVFIgs7LqlZx6WWttamXFNlSFXSSDa4O8aRovmG/wB9sQ/wxH0ojP1e6R2tTjz02zOOuvKcW+0LIcUo5iRoN5O6NBcw4WxtiH+Go+lEMyWEP0+SNa1M+GK9RPZDJZh3VD4afUT2QxUdYivcvKfFHFRiP1vWoSfyyO0QeWYj9aNqjJ6/nkdogjuE+LIjJzbaFppE7LIaZSSM205ifG9ENa3hpUipb7TZVLuaOpGwjjDlaZet05E5KqQHkkhyx8U/ZBnDdQbqFKepc2nwlhByE7x/5GunOUXrXyeXxot/Zs/T/DP+NsKtreeqEsjpAtVwRsUmIBVqEpKStKSCNoIsY0BUZQyM4qnveTvKJbvsSs7vQYgWJ6X3vniFJIadOuYeKqJip060cMZtr2rTlpkUtNSakKNxF/8AMYbyY3xD/DUfSxWeIaWGXisIFr6gdkW1zLGQzjnEBCgb01GwfvYpL607UWzVWFyqs4mnqubTp9RPZDJRh5WPLiP2E9kMVmKB7msp8EdazACtflCT+WT2wcUYA1o/jCU+WT2wR3CexT+F6w7Sa2lBUXGHTlUjiL7PrESnGjsxSUN1mmuFbYWlSVDYoGxPtAirkTaX2luBVnEqNgDs1N4leHsRNVKljDk0vrdZxgKPtT9Y+eNvNJtSX6jL1unattyY1tmVxNhtupydiHUX02pVvHpBiB1JldXpjzUxrNMnI7faTuV84/qDBHk5rQo1fdw/OrtKTivgSTohzh88d+NmBRqwmotIJZX1JhI3oO/0jbDdJOlU7XyisuukylLWl5KzqMoktrlmUuuLZaHdKlIBCTfaCL6eKLm2sWFzR2A1juvlCcqe9zY1+UiJ45lpiVUZyVcK25hN3ShR66b7DxB0PptE85rS23MUVVaDdSqegrO+/SceBG6Oup4nayfsS+n2c6NVNl+Vny8+onsgesw/rZ8PPqJ7IGrMYp7mwp8UNnJyVEwJczLIeOxsrGb2QHrR8PlPlk9sdNQam3cRfAdKy2Wwm3cwUnNmuV3OmzTzbdsddQ7qROSaXwhaulRmWF7TfU2tp6IVI5lJtMyo3UCxNuDOQlSiPnvDKcrL0rXGpphwoU1lsQdhveA0zNBbhUlRIJPtvA0zSnXVkkXKt8aWFdwlgZwlLBZ1frSahJt1FpWR29zlOqVjbE0pmOF1jDzE8Hktz8sC28SAesBoqx01H1xRFPqCm0Lllr6itNf6R3UupuU6fILmVl7qua6Abj80S5XMJ6ZMefbm1JonC62+tLsgt4qCUlKLaXRwt5osvmgu5sa11kKuBT0KHm+E2RQFTnHW5ruhDpUsHRRN7+3aIu/mVPdNjavL401H0sMdQuNVGURqtTjHxjyaarnl5+TT2QKecCLXSs3+KknsjvrlXkRUFoJClJSEquSLEaEWgeqqyHBP8xjKvcfgnpXg+OzjKCQorB4ZTASrTLTlSlEIJUovJ2DzwVmJ2mPpyutIUOGdX2wLm5mQNRkg0hKB3Qgk5zp1hrrAhJKWDI9NwPj5h59qY5P8UPSz+iwmlvJVYKCgUqKDlOm20MHeTjlBQ8SjAmKMt9nep46fyx6mtKV0DdlK8Ub/ADR9Kl/GV7TFj33jGCp+oeMYPMCkYHx5IuuOu8n+KHcyMotSXtm8ao3w0d5O8fupCjgXEwO8d6n/ALsenS3HkqccmJ19pOchKEIBGUbDfKSb7YcNOKU2FB1xaSLhRuCRArh+x068kjzjwXh7HFKlJhua5OK/NrVlSOlpbo6gvcatnQ319AizOaFhrEVAxjXXq5QKpSmHpFKW1zko4ylSukvlBUADpujaBUv4yvbAHF6HH2ZdtOZagom202tCVK7nHDQquHNpND6s4GwvV55yenaYDMOG61turbzniQkgE+eGX4M8Hfq133p370KFEdpDKqzSwpMX4M8Hfq133p370db3JfgtY61Md96c+9ChQmEL3qn8n+Q9K4ekZeXbYadnQ2hISkGaWbD0kx2d5JT9LN+8L+2FCjo5zkXeSU/SzfvC/thd45M/nJv3hX2woUIB87xyX6Sa94V9sOZGnSsmtS2UKLihYrWsqVbhc7oUKFQj2P/Z",
+      "image_url": "https://api.mobileapi.dev/devices/26235/thumb.png",
+      "network": {
+        "id": 20159,
+        "technology": "",
+        "bands_2g": "",
+        "bands_3g": "UMTS 900 2100",
+        "bands_4g": "FDD LTE: 2600, 2100, 1900, 1800, 1700, 900, 850, 800, 700",
+        "bands_5g": "",
+        "speed": ""
+      },
+      "body": {
+        "id": 25476,
+        "dimensions": "146.70 x 72.60 x 7.90 mm",
+        "weight": "192.00 g",
+        "build": "",
+        "sim": "microSIM, nanoSIM",
+        "other": ""
+      },
+      "display": {
+        "id": 25638,
+        "type": "Color / IPS TFT16,7M colors720 x 1280 px (5.00\") 294 ppi∼64.7% screen-to-body ratio",
+        "size": "5.00 inches",
+        "resolution": "720 x 1280 pixels",
+        "protection": "Corning Gorilla Glass 3",
+        "other": ""
+      },
+      "platform": {
+        "id": 19147,
+        "os": "Android6.0 Marshmallow",
+        "chipset": "MediaTek MT6735Processor clock: 1.30 GHzNumber of cores: 4GPU: ARM Mali-T720 MP2 @600 MHz",
+        "cpu": "1.30 GHz, 4 cores",
+        "gpu": "ARM Mali-T720 MP2 @600 MHz"
+      },
+      "memory": {
+        "id": 25650,
+        "card_slot": "microSD, microSDHC, microSDHC (up to 128 GB)",
+        "internal": "16 GBBuy memory card RAM: 2 GB",
+        "other": ""
+      },
+      "main_camera": null,
+      "selfie_camera": null,
+      "sound": null,
+      "comms": null,
+      "features": null,
+      "battery": {
+        "id": 25411,
+        "type": "Li-Ion 2250 mAh",
+        "charging": ""
+      },
+      "misc": null
+    },
+    {
+      "id": 1091,
+      "name": "150 Music",
+      "manufacturer": {
+        "id": 71,
+        "name": "Nokia",
+        "logo_b64": null,
+        "website_url": null
+      },
+      "manufacturer_name": "Nokia",
+      "device_type": "phone",
+      "description": "HMD 150 Music phone. Announced Mar 2025. Features 2.4″  display, Unisoc 6531F chipset, 2500 mAh battery, 8 MB storage, 8 MB RAM.",
+      "colors": "Blue, Gray, Violet",
+      "storage": "8MB 8MB RAM",
+      "screen_resolution": "2.4\", 240x320 pixels",
+      "weight": "83.1g",
+      "thickness": "14.8mm",
+      "release_date": "Released 2025, March",
+      "camera": "0.1MP",
+      "battery_capacity": "2500 mAh",
+      "hardware": "8GB RAM, Unisoc 6531F",
+      "image_b64": "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",
+      "image_url": "https://api.mobileapi.dev/devices/1091/thumb.png",
+      "network": {
+        "id": 369,
+        "technology": "GSM",
+        "bands_2g": "GSM 900 / 1800",
+        "bands_3g": "",
+        "bands_4g": "",
+        "bands_5g": "",
+        "speed": ""
+      },
+      "body": {
+        "id": 361,
+        "dimensions": "130.5 x 52.9 x 14.8 mm (5.14 x 2.08 x 0.58 in)",
+        "weight": "83.1 g (2.93 oz)",
+        "build": "",
+        "sim": "Dual SIM (Mini-SIM, dual stand-by)",
+        "other": "IP54 dust protected and water resistant (water splashes) - EU onlyUPI payment application (India only)"
+      },
+      "display": {
+        "id": 368,
+        "type": "TN TFT",
+        "size": "2.4 inches, 17.8 cm2(~25.8% screen-to-body ratio)",
+        "resolution": "240 x 320 pixels, 4:3 ratio (~167 ppi density)",
+        "protection": "",
+        "other": ""
+      },
+      "platform": {
+        "id": 362,
+        "os": "",
+        "chipset": "Unisoc 6531F",
+        "cpu": "",
+        "gpu": ""
+      },
+      "memory": {
+        "id": 361,
+        "card_slot": "microSDHC",
+        "internal": "8MB 8MB RAM",
+        "other": ""
+      },
+      "main_camera": {
+        "id": 362,
+        "modules": "QVGA",
+        "features": "LED flash",
+        "video": "Yes"
+      },
+      "selfie_camera": {
+        "id": 361,
+        "modules": "No",
+        "features": "",
+        "video": ""
+      },
+      "sound": {
+        "id": 369,
+        "loudspeaker": "Yes",
+        "audio_jack": "Yes"
+      },
+      "comms": {
+        "id": 368,
+        "wlan": "No",
+        "bluetooth": "5.0, A2DP",
+        "positioning": "No",
+        "nfc": "No",
+        "radio": "Unspecified",
+        "usb": "USB Type-C 1.1"
+      },
+      "features": {
+        "id": 348,
+        "sensors": "No",
+        "other": "MP3 player"
+      },
+      "battery": {
+        "id": 365,
+        "type": "2500 mAh, removable",
+        "charging": ""
+      },
+      "misc": null
+    },
+    {
+      "id": 1092,
+      "name": "130 Music",
+      "manufacturer": {
+        "id": 71,
+        "name": "Nokia",
+        "logo_b64": null,
+        "website_url": null
+      },
+      "manufacturer_name": "Nokia",
+      "device_type": "phone",
+      "description": "HMD 130 Music phone. Announced Mar 2025. Features 2.4″  display, Unisoc 6531F chipset, 2500 mAh battery, 8 MB storage, 8 MB RAM.",
+      "colors": "Dark Blue, Purple, Gray",
+      "storage": "8MB 8MB RAM",
+      "screen_resolution": "2.4\", 240x320 pixels",
+      "weight": "83.1g",
+      "thickness": "14.8mm",
+      "release_date": "Released 2025, March",
+      "camera": "",
+      "battery_capacity": "2500 mAh",
+      "hardware": "8GB RAM, Unisoc 6531F",
+      "image_b64": "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",
+      "image_url": "https://api.mobileapi.dev/devices/1092/thumb.png",
+      "network": {
+        "id": 370,
+        "technology": "GSM",
+        "bands_2g": "GSM 900 / 1800",
+        "bands_3g": "",
+        "bands_4g": "",
+        "bands_5g": "",
+        "speed": ""
+      },
+      "body": {
+        "id": 362,
+        "dimensions": "130.5 x 52.9 x 14.8 mm (5.14 x 2.08 x 0.58 in)",
+        "weight": "83.1 g (2.93 oz)",
+        "build": "",
+        "sim": "Dual SIM (Mini-SIM, dual stand-by)",
+        "other": "IP54 dust protected and water resistant (water splashes) - EU only"
+      },
+      "display": {
+        "id": 369,
+        "type": "TN TFT",
+        "size": "2.4 inches, 17.8 cm2(~25.8% screen-to-body ratio)",
+        "resolution": "240 x 320 pixels, 4:3 ratio (~167 ppi density)",
+        "protection": "",
+        "other": ""
+      },
+      "platform": {
+        "id": 363,
+        "os": "",
+        "chipset": "Unisoc 6531F",
+        "cpu": "",
+        "gpu": ""
+      },
+      "memory": {
+        "id": 362,
+        "card_slot": "microSDHC",
+        "internal": "8MB 8MB RAM",
+        "other": ""
+      },
+      "main_camera": null,
+      "selfie_camera": null,
+      "sound": {
+        "id": 370,
+        "loudspeaker": "Yes",
+        "audio_jack": "Yes"
+      },
+      "comms": {
+        "id": 369,
+        "wlan": "No",
+        "bluetooth": "5.0, A2DP",
+        "positioning": "No",
+        "nfc": "No",
+        "radio": "Unspecified",
+        "usb": "USB Type-C 1.1"
+      },
+      "features": {
+        "id": 349,
+        "sensors": "No",
+        "other": "MP3 player"
+      },
+      "battery": {
+        "id": 366,
+        "type": "2500 mAh, removable",
+        "charging": ""
+      },
+      "misc": null
+    },
+    {
+      "id": 1095,
+      "name": "Arc",
+      "manufacturer": {
+        "id": 38,
+        "name": "HMD",
+        "logo_b64": null,
+        "website_url": null
+      },
+      "manufacturer_name": "HMD",
+      "device_type": "phone",
+      "description": "HMD Arc Android smartphone. Announced Dec 2024. Features 6.52″  display, Unisoc SC9863A chipset, 5000 mAh battery, 64 GB storage, 4 GB RAM.",
+      "colors": "Black",
+      "storage": "64GB",
+      "screen_resolution": "6.52\", 576x1280 pixels",
+      "weight": "185.4g",
+      "thickness": "9mm",
+      "release_date": "Released 2025, January",
+      "camera": "13MP",
+      "battery_capacity": "5000 mAh",
+      "hardware": "4GB RAM, Unisoc SC9863A",
+      "image_b64": "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",
+      "image_url": "https://api.mobileapi.dev/devices/1095/thumb.png",
+      "network": {
+        "id": 373,
+        "technology": "GSM / HSPA / LTE",
+        "bands_2g": "GSM 850 / 900 / 1800 / 1900",
+        "bands_3g": "HSDPA 850 / 900 / 2100",
+        "bands_4g": "1, 3, 5, 7, 8, 20, 28, 38, 40, 41",
+        "bands_5g": "",
+        "speed": "HSPA, LTE"
+      },
+      "body": {
+        "id": 365,
+        "dimensions": "166.4 x 76.9 x 9 mm (6.55 x 3.03 x 0.35 in)",
+        "weight": "185.4 g (6.53 oz)",
+        "build": "",
+        "sim": "Nano-SIM",
+        "other": "IP54 dust protected and water resistant (water splashes) - EU only"
+      },
+      "display": {
+        "id": 372,
+        "type": "IPS LCD, 460 nits (peak)",
+        "size": "6.52 inches, 102.6 cm2(~80.2% screen-to-body ratio)",
+        "resolution": "576 x 1280 pixels, 20:9 ratio (~215 ppi density)",
+        "protection": "",
+        "other": ""
+      },
+      "platform": {
+        "id": 366,
+        "os": "Android 14 (Go edition)",
+        "chipset": "Unisoc SC9863A (28 nm)",
+        "cpu": "Octa-core (4x1.6 GHz Cortex-A55 & 4x1.2 GHz Cortex-A55)",
+        "gpu": "IMG8322"
+      },
+      "memory": {
+        "id": 365,
+        "card_slot": "microSDXC",
+        "internal": "64GB 4GB RAM",
+        "other": ""
+      },
+      "main_camera": {
+        "id": 365,
+        "modules": "13 MP, (wide), AF",
+        "features": "LED flash, panorama",
+        "video": "Yes"
+      },
+      "selfie_camera": {
+        "id": 364,
+        "modules": "5 MP",
+        "features": "",
+        "video": "Yes"
+      },
+      "sound": {
+        "id": 373,
+        "loudspeaker": "Yes",
+        "audio_jack": "Yes"
+      },
+      "comms": {
+        "id": 372,
+        "wlan": "Wi-Fi 802.11 b/g/n",
+        "bluetooth": "5.2, A2DP, LE",
+        "positioning": "GPS, GALILEO",
+        "nfc": "No",
+        "radio": "FM radio",
+        "usb": "USB Type-C"
+      },
+      "features": {
+        "id": 352,
+        "sensors": "Fingerprint (side-mounted), accelerometer, proximity",
+        "other": ""
+      },
+      "battery": {
+        "id": 369,
+        "type": "5000 mAh",
+        "charging": "10W wired"
+      },
+      "misc": null
+    },
+    {
+      "id": 12018,
+      "name": "R32",
+      "manufacturer": {
+        "id": 241,
+        "name": "Aspera",
+        "logo_b64": null,
+        "website_url": null
+      },
+      "manufacturer_name": "Aspera",
+      "device_type": "phone",
+      "description": "",
+      "colors": "Black/Yellow",
+      "storage": "256 MBBuy memory card",
+      "screen_resolution": "2.40\", 240 x 320 pixels",
+      "weight": "152.00",
+      "thickness": "16.00mm",
+      "release_date": "1Q 2018",
+      "camera": "",
+      "battery_capacity": "1700 mAh",
+      "hardware": "128 MB RAM, ",
+      "image_b64": "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",
+      "image_url": "https://api.mobileapi.dev/devices/12018/thumb.png",
+      "network": {
+        "id": 11819,
+        "technology": "",
+        "bands_2g": "",
+        "bands_3g": "UMTS 850 900 2100",
+        "bands_4g": "",
+        "bands_5g": "",
+        "speed": ""
+      },
+      "body": {
+        "id": 11849,
+        "dimensions": "130.00 x 64.00 x 16.00 mm",
+        "weight": "152.00 g",
+        "build": "",
+        "sim": "microSIM",
+        "other": "IP68"
+      },
+      "display": {
+        "id": 11833,
+        "type": "Color / TFT256k colors240 x 320 px (2.40\") 167 ppi∼21.4% screen-to-body ratio",
+        "size": "2.40 inches",
+        "resolution": "240 x 320 pixels",
+        "protection": "",
+        "other": ""
+      },
+      "platform": {
+        "id": 8986,
+        "os": "",
+        "chipset": "Processor clock: 1 MHz",
+        "cpu": "",
+        "gpu": ""
+      },
+      "memory": {
+        "id": 11845,
+        "card_slot": "microSD, microSDHC, microSDXC (up to 32 GB)",
+        "internal": "256 MBBuy memory card RAM: 128 MB",
+        "other": ""
+      },
+      "main_camera": null,
+      "selfie_camera": null,
+      "sound": null,
+      "comms": null,
+      "features": null,
+      "battery": {
+        "id": 11831,
+        "type": "Li-Ion 1700 mAh",
+        "charging": ""
+      },
+      "misc": null
+    },
+    {
+      "id": 1081,
+      "name": "Excite Write",
+      "manufacturer": {
+        "id": 107,
+        "name": "Toshiba",
+        "logo_b64": null,
+        "website_url": null
+      },
+      "manufacturer_name": "Toshiba",
+      "device_type": "phone",
+      "description": "Toshiba Excite Write Android tablet. Announced Jun 2013. Features 10.1″  display, Nvidia Tegra 4 chipset, 8 MP primary camera, 1.2 MP front camera, 32 GB storage, 2 GB RAM.",
+      "colors": "Silver",
+      "storage": "32GB",
+      "screen_resolution": "10.1\", 2560x1600 pixels",
+      "weight": "671.3g",
+      "thickness": "10.2mm",
+      "release_date": "Released 2013, July",
+      "camera": "8MP",
+      "battery_capacity": "",
+      "hardware": "2GB RAM, Nvidia Tegra 4",
+      "image_b64": "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",
+      "image_url": "https://api.mobileapi.dev/devices/1081/thumb.png",
+      "network": {
+        "id": 359,
+        "technology": "No cellular connectivity",
+        "bands_2g": "N/A",
+        "bands_3g": "",
+        "bands_4g": "",
+        "bands_5g": "",
+        "speed": ""
+      },
+      "body": {
+        "id": 351,
+        "dimensions": "261.6 x 177.8 x 10.2 mm (10.30 x 7.00 x 0.40 in)",
+        "weight": "671.3 g (1.48 lb)",
+        "build": "",
+        "sim": "No",
+        "other": "Stylus"
+      },
+      "display": {
+        "id": 358,
+        "type": "LED-backlit IPS LCD",
+        "size": "10.1 inches, 295.8 cm2(~63.6% screen-to-body ratio)",
+        "resolution": "2560 x 1600 pixels, 16:10 ratio (~299 ppi density)",
+        "protection": "",
+        "other": ""
+      },
+      "platform": {
+        "id": 352,
+        "os": "Android 4.2.1 (Jelly Bean)",
+        "chipset": "Nvidia Tegra 4",
+        "cpu": "Quad-core Cortex-A15",
+        "gpu": "ULP GeForce"
+      },
+      "memory": {
+        "id": 351,
+        "card_slot": "microSDHC (dedicated slot)",
+        "internal": "32GB 2GB RAM",
+        "other": ""
+      },
+      "main_camera": {
+        "id": 353,
+        "modules": "8 MP, AF",
+        "features": "LED flash",
+        "video": "Yes"
+      },
+      "selfie_camera": {
+        "id": 352,
+        "modules": "1.2 MP",
+        "features": "",
+        "video": ""
+      },
+      "sound": {
+        "id": 359,
+        "loudspeaker": "Yes, with stereo speakers",
+        "audio_jack": "Yes"
+      },
+      "comms": {
+        "id": 358,
+        "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+        "bluetooth": "4.0, A2DP",
+        "positioning": "GPS",
+        "nfc": "No",
+        "radio": "No",
+        "usb": "microUSB 2.0"
+      },
+      "features": {
+        "id": 338,
+        "sensors": "Accelerometer, gyro, compass",
+        "other": "HDMI port"
+      },
+      "battery": {
+        "id": 355,
+        "type": "Li-Po (33 Wh)",
+        "charging": ""
+      },
+      "misc": {
+        "id": 352,
+        "model_numbers": "",
+        "sar_us": "",
+        "sar_eu": "",
+        "price": "About 440 EUR"
+      }
+    },
+    {
+      "id": 1082,
+      "name": "Excite Pure",
+      "manufacturer": {
+        "id": 107,
+        "name": "Toshiba",
+        "logo_b64": null,
+        "website_url": null
+      },
+      "manufacturer_name": "Toshiba",
+      "device_type": "phone",
+      "description": "Toshiba Excite Pure Android tablet. Announced Jun 2013. Features 10.1″  display, Nvidia Tegra 3 chipset, 1.2 MP primary camera, 16 GB storage, 1000 MB RAM.",
+      "colors": "Silver",
+      "storage": "16GB",
+      "screen_resolution": "10.1\", 1280x800 pixels",
+      "weight": "598.7g",
+      "thickness": "10.2mm",
+      "release_date": "Released 2013, July",
+      "camera": "1.3MP",
+      "battery_capacity": "",
+      "hardware": "1GB RAM, Nvidia Tegra 3",
+      "image_b64": "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",
+      "image_url": "https://api.mobileapi.dev/devices/1082/thumb.png",
+      "network": {
+        "id": 360,
+        "technology": "No cellular connectivity",
+        "bands_2g": "N/A",
+        "bands_3g": "",
+        "bands_4g": "",
+        "bands_5g": "",
+        "speed": ""
+      },
+      "body": {
+        "id": 352,
+        "dimensions": "261.6 x 177.8 x 10.2 mm (10.30 x 7.00 x 0.40 in)",
+        "weight": "598.7 g (1.32 lb)",
+        "build": "",
+        "sim": "No",
+        "other": ""
+      },
+      "display": {
+        "id": 359,
+        "type": "LED-backlit IPS LCD",
+        "size": "10.1 inches, 295.8 cm2(~63.6% screen-to-body ratio)",
+        "resolution": "1280 x 800 pixels, 16:10 ratio (~149 ppi density)",
+        "protection": "",
+        "other": ""
+      },
+      "platform": {
+        "id": 353,
+        "os": "Android 4.2.1 (Jelly Bean), upgradаble to 4.3 (Jelly Bean)",
+        "chipset": "Nvidia Tegra 3",
+        "cpu": "Quad-core",
+        "gpu": ""
+      },
+      "memory": {
+        "id": 352,
+        "card_slot": "microSDHC (dedicated slot)",
+        "internal": "16GB 1GB RAM",
+        "other": ""
+      },
+      "main_camera": {
+        "id": 354,
+        "modules": "1.2 MP",
+        "features": "",
+        "video": "Yes"
+      },
+      "selfie_camera": {
+        "id": 353,
+        "modules": "No",
+        "features": "",
+        "video": ""
+      },
+      "sound": {
+        "id": 360,
+        "loudspeaker": "Yes, with stereo speakers",
+        "audio_jack": "Yes"
+      },
+      "comms": {
+        "id": 359,
+        "wlan": "Wi-Fi 802.11 b/g/n",
+        "bluetooth": "4.0, A2DP",
+        "positioning": "GPS",
+        "nfc": "No",
+        "radio": "No",
+        "usb": "microUSB 2.0"
+      },
+      "features": {
+        "id": 339,
+        "sensors": "Accelerometer, gyro, compass",
+        "other": "HDMI port"
+      },
+      "battery": {
+        "id": 356,
+        "type": "Li-Po (25 Wh)",
+        "charging": ""
+      },
+      "misc": {
+        "id": 353,
+        "model_numbers": "",
+        "sar_us": "",
+        "sar_eu": "",
+        "price": "About 230 EUR"
+      }
+    },
+    {
+      "id": 1083,
+      "name": "Excite 10 SE",
+      "manufacturer": {
+        "id": 107,
+        "name": "Toshiba",
+        "logo_b64": null,
+        "website_url": null
+      },
+      "manufacturer_name": "Toshiba",
+      "device_type": "phone",
+      "description": "Toshiba Excite 10 SE Android tablet. Announced Dec 2012. Features 10.1″  display, Nvidia Tegra 3 chipset, 3.15 MP primary camera, 1.2 MP front camera, 16 GB storage, 1000 MB RAM.",
+      "colors": "Black/Silver",
+      "storage": "16GB",
+      "screen_resolution": "10.1\", 1280x800 pixels",
+      "weight": "639.6g",
+      "thickness": "10.2mm",
+      "release_date": "Released 2012, December",
+      "camera": "3MP",
+      "battery_capacity": "",
+      "hardware": "1GB RAM, Nvidia Tegra 3",
+      "image_b64": "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",
+      "image_url": "https://api.mobileapi.dev/devices/1083/thumb.png",
+      "network": {
+        "id": 361,
+        "technology": "No cellular connectivity",
+        "bands_2g": "N/A",
+        "bands_3g": "",
+        "bands_4g": "",
+        "bands_5g": "",
+        "speed": ""
+      },
+      "body": {
+        "id": 353,
+        "dimensions": "261.6 x 180.3 x 10.2 mm (10.30 x 7.10 x 0.40 in)",
+        "weight": "639.6 g (1.41 lb)",
+        "build": "",
+        "sim": "No",
+        "other": ""
+      },
+      "display": {
+        "id": 360,
+        "type": "LED-backlit IPS LCD",
+        "size": "10.1 inches, 295.8 cm2(~62.7% screen-to-body ratio)",
+        "resolution": "1280 x 800 pixels, 16:10 ratio (~149 ppi density)",
+        "protection": "",
+        "other": ""
+      },
+      "platform": {
+        "id": 354,
+        "os": "Android 4.1 (Jelly Bean)",
+        "chipset": "Nvidia Tegra 3",
+        "cpu": "Quad-core 1.5 GHz",
+        "gpu": "ULP GeForce 2"
+      },
+      "memory": {
+        "id": 353,
+        "card_slot": "microSDHC (dedicated slot)",
+        "internal": "16GB 1GB RAM",
+        "other": ""
+      },
+      "main_camera": {
+        "id": 355,
+        "modules": "3.15 MP, AF",
+        "features": "",
+        "video": "Yes"
+      },
+      "selfie_camera": {
+        "id": 354,
+        "modules": "1.2 MP",
+        "features": "",
+        "video": ""
+      },
+      "sound": {
+        "id": 361,
+        "loudspeaker": "Yes, with stereo speakers",
+        "audio_jack": "Yes"
+      },
+      "comms": {
+        "id": 360,
+        "wlan": "Wi-Fi 802.11 b/g/n",
+        "bluetooth": "3.0, A2DP",
+        "positioning": "GPS",
+        "nfc": "No",
+        "radio": "No",
+        "usb": "microUSB 2.0"
+      },
+      "features": {
+        "id": 340,
+        "sensors": "Accelerometer, gyro, compass",
+        "other": ""
+      },
+      "battery": {
+        "id": 357,
+        "type": "Li-Po (25 Wh)",
+        "charging": ""
+      },
+      "misc": {
+        "id": 354,
+        "model_numbers": "",
+        "sar_us": "",
+        "sar_eu": "",
+        "price": "About 250 EUR"
+      }
+    },
+    {
+      "id": 1084,
+      "name": "Excite 13 AT335",
+      "manufacturer": {
+        "id": 107,
+        "name": "Toshiba",
+        "logo_b64": null,
+        "website_url": null
+      },
+      "manufacturer_name": "Toshiba",
+      "device_type": "phone",
+      "description": "Toshiba Excite 13 AT335 Android tablet. Announced Apr 2012. Features 13.3″  display, Nvidia Tegra 3 chipset, 5 MP primary camera, 2 MP front camera, 64 GB storage, 1000 MB RAM, Corning Gorilla Glass.",
+      "colors": "Dark gray metallic",
+      "storage": "32GB, 64GB",
+      "screen_resolution": "13.3\", 1600x900 pixels",
+      "weight": "998g",
+      "thickness": "9.8mm",
+      "release_date": "Released 2012, July",
+      "camera": "5MP",
+      "battery_capacity": "",
+      "hardware": "1GB RAM, Nvidia Tegra 3",
+      "image_b64": "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",
+      "image_url": "https://api.mobileapi.dev/devices/1084/thumb.png",
+      "network": {
+        "id": 362,
+        "technology": "GSM / HSPA",
+        "bands_2g": "GSM 850 / 900 / 1800 / 1900",
+        "bands_3g": "HSDPA",
+        "bands_4g": "",
+        "bands_5g": "",
+        "speed": "HSPA"
+      },
+      "body": {
+        "id": 354,
+        "dimensions": "343.8 x 211.2 x 9.8 mm (13.54 x 8.31 x 0.39 in)",
+        "weight": "998 g (2.20 lb)",
+        "build": "",
+        "sim": "Mini-SIM",
+        "other": ""
+      },
+      "display": {
+        "id": 361,
+        "type": "LED-backlit IPS LCD",
+        "size": "13.3 inches, 644.9 cm2(~88.8% screen-to-body ratio)",
+        "resolution": "1600 x 900 pixels, 16:9 ratio (~120 ppi density)",
+        "protection": "Corning Gorilla Glass",
+        "other": ""
+      },
+      "platform": {
+        "id": 355,
+        "os": "Android 4.0 (Ice Cream Sandwich)",
+        "chipset": "Nvidia Tegra 3",
+        "cpu": "Quad-core 1.5 GHz",
+        "gpu": "ULP GeForce 2"
+      },
+      "memory": {
+        "id": 354,
+        "card_slot": "SD/microSDHC (dedicated slot)",
+        "internal": "32GB 1GB RAM, 64GB 1GB RAM",
+        "other": ""
+      },
+      "main_camera": {
+        "id": 356,
+        "modules": "5 MP, AF",
+        "features": "LED flash",
+        "video": "1080p@30fps"
+      },
+      "selfie_camera": {
+        "id": 355,
+        "modules": "2 MP",
+        "features": "",
+        "video": ""
+      },
+      "sound": {
+        "id": 362,
+        "loudspeaker": "Yes, with four speakers",
+        "audio_jack": "Yes"
+      },
+      "comms": {
+        "id": 361,
+        "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+        "bluetooth": "3.0",
+        "positioning": "GPS, A-GPS",
+        "nfc": "",
+        "radio": "No",
+        "usb": "miniUSB 2.0"
+      },
+      "features": {
+        "id": 341,
+        "sensors": "Accelerometer, gyro, compass",
+        "other": "HDMI portMP3/WAV/WMA/eAAC+ playerMP4/H.264/WMV playerOrganizerDocument viewerPhoto editorVoice memoPredictive text input"
+      },
+      "battery": {
+        "id": 358,
+        "type": "Non-removable Li-Po battery (38 Wh)",
+        "charging": ""
+      },
+      "misc": {
+        "id": 355,
+        "model_numbers": "",
+        "sar_us": "",
+        "sar_eu": "",
+        "price": "About 540 EUR"
+      }
+    },
+    {
+      "id": 19283,
+      "name": "K310i",
+      "manufacturer": {
+        "id": 125,
+        "name": "Sony Ericsson",
+        "logo_b64": null,
+        "website_url": null
+      },
+      "manufacturer_name": "Sony Ericsson",
+      "device_type": "phone",
+      "description": "",
+      "colors": "",
+      "storage": "15 MB",
+      "screen_resolution": "1.80\", 128 x 160 pixels",
+      "weight": "82.00",
+      "thickness": "17.00mm",
+      "release_date": "",
+      "camera": "",
+      "battery_capacity": "750 mAh",
+      "hardware": "ARM9",
+      "image_b64": "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",
+      "image_url": "https://api.mobileapi.dev/devices/19283/thumb.png",
+      "network": null,
+      "body": {
+        "id": 18816,
+        "dimensions": "101.00 x 44.00 x 17.00 mm",
+        "weight": "82.00 g",
+        "build": "",
+        "sim": "",
+        "other": ""
+      },
+      "display": {
+        "id": 18854,
+        "type": "Color / UBC64k colors128 x 160 px (1.80\")",
+        "size": "1.80 inches",
+        "resolution": "128 x 160 pixels",
+        "protection": "",
+        "other": ""
+      },
+      "platform": {
+        "id": 14407,
+        "os": "",
+        "chipset": "ARM9Processor clock: 110 MHz",
+        "cpu": "",
+        "gpu": ""
+      },
+      "memory": {
+        "id": 18866,
+        "card_slot": "",
+        "internal": "15 MB",
+        "other": ""
+      },
+      "main_camera": null,
+      "selfie_camera": null,
+      "sound": null,
+      "comms": null,
+      "features": null,
+      "battery": {
+        "id": 18707,
+        "type": "Li-Ion 750 mAh",
+        "charging": ""
+      },
+      "misc": {
+        "id": 13378,
+        "model_numbers": "K310, Doris",
+        "sar_us": "",
+        "sar_eu": "",
+        "price": ""
+      }
+    },
+    {
+      "id": 1087,
+      "name": "102 4G",
+      "manufacturer": {
+        "id": 38,
+        "name": "HMD",
+        "logo_b64": null,
+        "website_url": null
+      },
+      "manufacturer_name": "HMD",
+      "device_type": "phone",
+      "description": "HMD 102 4G phone. Announced Sep 2025. Features 2.0″  display, Unisoc 8910 FF-S chipset, 1000 mAh battery, 24 MB storage.",
+      "colors": "Dark Blue, Red, Purple",
+      "storage": "24MB",
+      "screen_resolution": "2.0\", 120x160 pixels",
+      "weight": "84.2g",
+      "thickness": "14.3mm",
+      "release_date": "Released 2025, September 11",
+      "camera": "0.1MP",
+      "battery_capacity": "1000 mAh",
+      "hardware": "Unisoc 8910 FF-S",
+      "image_b64": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCABkAEsDASIAAhEBAxEB/8QAHAAAAQQDAQAAAAAAAAAAAAAABQMGBwgAAgQB/8QASRAAAgEDAgMEBQUNAw0AAAAAAQIDBAURACEGEjEHE0FRFSIycbQUI2FysggXNTdSZIGCkqGxs9JCkdEWJSczRVNic3SDo+Lx/8QAGgEAAgMBAQAAAAAAAAAAAAAAAgQAAQUDBv/EACwRAAIBAgMHAgcBAAAAAAAAAAABAgMRBCExBRITMkFRcWGxIkJSkZKh8OH/2gAMAwEAAhEDEQA/AGp223usHFVXV1DNUSz1lRzM7nYLIQAPoAwAPIajmbiWRetOD7pDp39vbiO9u2elbWH/AMh0vD2b8IS0dHLVXzihXegaWqEVpQhKjCFYkJbdd3yx/JHTOtirXxKnuUlkktFfoc7R6keycWlfboz+rP8A+uuaXjakQetb6o/VqVH8V10X/g6qhquS30lyqYO6jzJKiRkycg7wAcx9UNzcpOCRjIB0Cl4QvBde8tlWqcw5mBQkDO5xny0PFx/0v8f8K+DuEF41o55FhShrUdyAC1QpAPuCjRSmrJ0uEkazSBcqQOc7ZUHQHtDsXDth4pt8HDNZdqyiljV2kuNMsMnec5BAVSRygBd/HJ6aJxfhV8eSfYXXahVqzuquqfaxGktB1LVT8gPfSdPyjpN6mo/30n7R0gssXJjvY8jw5hrRmUqcHPu1rrQ5s2NbVo/NHVVCkeKysP4HVtewvjC+y9lVlNVVmqkRZo+9ny7lVmdVBY7nAAG/lqoDH1v06s92EH/RVaOvtVHxEmszaSTiroOBAn3Q78t4k/6yt+2dSPw5DDMZDUQRTwRUoeSJqkQvJsByxkso5znYseVRliDjBjD7pB+W9MD41db/ADDp7WyujhpytRTQVIMACiYZA2H79sfpOmsEnKpVS1tH2OkYbyOq8W20+j6eSlMUlQe6KMlagFQjRQF3kDN81iZ5EwoBAHskIza5b7bbMqXyJIYIZKWlR4KhawPTGVY2L92O/Mh7xuURhhJ0ywUNgcNRdaZnB9DUDIqgFWGzY8Tt1+nrjPnoTcq+lCyhLRQguqrsm8eMjK4AwTnJ88AnWpCjWfzP+a9f65fA9CMO0M89+tGwB5cHH/M0rXVElNPNJBHDJUO8EMAmwUDuuzMDscBTsdskE5xrzj9B/lFYsbhsb/8Ac0ndmSOrWeVmSOCtpJJGGcqvKwJyNef2lJqrWa7r2B3d1pEicD3O4XLhN6mbiFKWrhp1eOmVhE9WxkKd1TLGAvOMDOVbdsEKu5BQXa4XGsuNuulXHWtRRSTU1UI0RmCSKrglQOZWQlhnJBUYOCctXhq4JZTRRd5cZI7oC8ohqigCvIYxyJjDsOXfPX2duunNbaHurnc351YU9vqkLr7LElYhj6CzjHvGsnDVJqrGz6oJpWNH9vH06tD2EfirtG/9qo+Ik1Vx2zJkHx1aLsH/ABVWjGPaqPiJNbG0eVeTlErn90y/LfwPzqs/mHTqhlEtMuDg92oI/VGmd91A2OJEH53WfzToYnaVZkC4pLiGChc8iHwx+Vrvg8TSoVp8SVrqPsOYZwSe8yVqG1obELsl5tkFSlbHClHKfnmHMnr7kDA5s4O3Kr+sMYLTq4cK4JHtdfPfXHTdo1jq8Sw8DXGoWZgitHGTzMScKCp89gBvt576D3rtGsktUyehq+haMBGh5FGGB3yCRg9M7eGnaG0cNGUm56u43xIS5mCOOo+Xirh9fN1/mjW6sgvEwlhjniZVSSKQZSReVdiPeAfMEAjpoZeL/R37imwyUsU6CCaNG70AEkyg+BOiDnF4l/V+yNZdScK1apKOabXsZ1driXiOClS001MIqS1SU65LKsdwmCoT1K5OVJ8cEE68M4ht4t9JTU9JS+rzJEGLScueXndmZmC52GQAd8ZAIST2AD/91o5676ahhqMLSjFXF3JiWfX1aTsII+9XaM9eap+Ik1VjPzgxq1HYPj71Vo+tU/ESaV2jyIKBAXb5Y/TXEsmKoU/cVlVkmMvkGVvAe7UYNwUoIHpePc4Gadxk/p1NHah8qPFlUtFGsk5rpQiMnPzN378o5fEk+GDny0zeJFvqwRi9UcFLCzeq0VNHHkgqcZjAB35c5yRnoM50c8NRm1Kazt39CJtaAS1DiSz21bbQcQrHSK5cxfJCVbPUHbcHx8xoFc+Hq241s1ZU3OGWaRsuREy4229UDYYA8OmnYQpaQlVJMj5OP+I65WE5ugSlQPKYIwkfLzBiZGwMeJzgY3znGNU8BQXT9sinIbFv4emorjT1ZqoSIJVkA5GGSCCB00Zl9a6zL5qv70Gj3FdBxTRUsfp220lHDJnleGCBT0ORmL6M7N5EgHB0AkObtJ7k+wNVGnTpxW53I3cf78VM8okFBEo7+eUEf6xe9ABKt4MQMFvHYgAjOm9cqj5TP3uG2REy7czNyqF5mPixxknSK+xrSQ7fp09FJLIBiQ9vGrVdg+T2VWjr7VR8RJqqan5we/VrOwf8VVo+tUfESaz9oci8hxIi4/oqm58etb6Op+TVNTcpIopSSArNUOq5IBPXyGo/uNsr6CzQV1XHN6PnPeRAhVSXGMkAdSNuvljUhcb2ya89oT22Cr+SSy10/JMJe7KESyHIbmXfbAGRkkdNR5eLRUWyhWtqZY3LYJh+VCRtmx6yg7bg4J6kDTalklfoijrpeHrvX0C1dBUvKXqTAtOqeuTyFyQWXlIAGT62QCCQARkWlBcGvUlsCz+k1ZIwMgOCei+Qxv8Ax9xuGwT3DhaGohvM4je4vCaSWdoqaMiLvO85mfkycEbDbbJGRpuUlF8puE9uWWNHQ476WcRq2B+Wxxjbbz20KldvMgTu9ovhs1bV3a4zMbX3FO9JOxMixtnlAIBUKucEEgjnAPtaAOf87Se5PsDThruGpqPgurub3gSRQ1kaNRxVXexNlAQ7Yblz6+AME+10AOm4/wCFZPqp9ga4tprLuWGlb1NJSHXqH1BrSQ7adWgDE1OZB79Ws7BvxVWjY+1UfESaqih+dGrXdgxP3qbP9ao+Ik1n4/kXkOBDvaLBbKrjqWmu7ctDJcJlmbvViKr3z8zBmVgMDfoc9PEaYV3t1poqI1dDcqCom5lMVOhYy7kYDery8wBAOD1Bx00/O0EWZ+P5Bf3mitpuE4nkhTmdU75yeUeZwB4ddiOoj68eiI1l9D1EssondYQ8WMxgjkbI6lhzZBUAADc52Zzy8FBFbJwxU8NpcJbxTQXZ61oWhldeURBOYMQoLglgBnGBnz0FipaB7hUUL3CijpE3SpYP3bNjOBhS2/hkA774xo3QDhF6Kka5NCav5aPlKPPLE7QjJKkhSiqVCgPu3OT/AGdwEj9GelamGoqWS2BmEc0KGUZAYrgNy5UkKMnHUnGdtCnmyzsrLNw3TcOV1al4pai5QTRiBYXBSRWO4AZQxYesSdgMAbljgJJ+FH+qn2BpwXYcCxcJO1rqq6ov5rmWMPHyKtOB6pKgEcx28ds77abshJuTfVT7C65Xv9yBhT6g0lIdtbKTyaTkO2nloAzRD86NWx7BSR2UWf61R8RJqpcZPeDVs+wbH3qbPuPaqPH84k1nY/kXkOAze3Pg22w9pF3hgqayKLvu9VFKYUyDnYDK9MscaYh4OoT1r7h+1H/RrNZoYVJ7qz6BWzEzwXQH/aFw/vj/AKNJtwPbs/hC4/tR/wBGs1mo6k+5VgVxBwpRUEMTxVta5diDzlNsDPgg02jQosxfvZC2cb8vgAPL6NZrNRSk2rsjFWQhdpG/uH+GtO65usj/ALv8NZrNOXdgQzw/w/TXCriSaqqkDE55CnkT4qfLV+Oy3gfh+x9ntlttNTvPGlMJDJO2XZnJdiSAB7THoBrNZrIxs5ZZhxR//9k=",
+      "image_url": "https://api.mobileapi.dev/devices/1087/thumb.png",
+      "network": {
+        "id": 365,
+        "technology": "GSM / HSPA / LTE",
+        "bands_2g": "GSM 900 / 1800",
+        "bands_3g": "HSDPA 2100",
+        "bands_4g": "1, 3, 5, 8, 28, 38, 39, 40, 41",
+        "bands_5g": "",
+        "speed": "HSPA, LTE"
+      },
+      "body": {
+        "id": 357,
+        "dimensions": "118.2 x 50.2 x 14.3 mm (4.65 x 1.98 x 0.56 in)",
+        "weight": "84.2 g (2.96 oz)",
+        "build": "",
+        "sim": "Nano-SIM + Nano-SIM",
+        "other": "Dust protected and splash resistant"
+      },
+      "display": {
+        "id": 364,
+        "type": "TFT",
+        "size": "2.0 inches, 12.4 cm2(~20.9% screen-to-body ratio)",
+        "resolution": "120 x 160 pixels, 4:3 ratio (~100 ppi density)",
+        "protection": "",
+        "other": ""
+      },
+      "platform": {
+        "id": 358,
+        "os": "",
+        "chipset": "Unisoc 8910 FF-S",
+        "cpu": "",
+        "gpu": ""
+      },
+      "memory": {
+        "id": 357,
+        "card_slot": "microSDHC",
+        "internal": "24MB",
+        "other": ""
+      },
+      "main_camera": {
+        "id": 359,
+        "modules": "QVGA",
+        "features": "LED flash",
+        "video": "No"
+      },
+      "selfie_camera": {
+        "id": 358,
+        "modules": "No",
+        "features": "",
+        "video": ""
+      },
+      "sound": {
+        "id": 365,
+        "loudspeaker": "Yes",
+        "audio_jack": "Yes"
+      },
+      "comms": {
+        "id": 364,
+        "wlan": "No",
+        "bluetooth": "4.2",
+        "positioning": "No",
+        "nfc": "No",
+        "radio": "Unspecified",
+        "usb": "USB Type-C"
+      },
+      "features": {
+        "id": 344,
+        "sensors": "",
+        "other": "MP3 player"
+      },
+      "battery": {
+        "id": 361,
+        "type": "Li-Ion 1000 mAh, removable",
+        "charging": ""
+      },
+      "misc": {
+        "id": 357,
+        "model_numbers": "",
+        "sar_us": "",
+        "sar_eu": "",
+        "price": "About 20 EUR"
+      }
+    },
+    {
+      "id": 1088,
+      "name": "101 4G",
+      "manufacturer": {
+        "id": 38,
+        "name": "HMD",
+        "logo_b64": null,
+        "website_url": null
+      },
+      "manufacturer_name": "HMD",
+      "device_type": "phone",
+      "description": "HMD 101 4G phone. Announced Sep 2025. Features 2.0″  display, Unisoc 8910 FF-S chipset, 1000 mAh battery, 24 MB storage.",
+      "colors": "Dark Blue, Blue, Red",
+      "storage": "24MB",
+      "screen_resolution": "2.0\", 120x160 pixels",
+      "weight": "83.5g",
+      "thickness": "14.3mm",
+      "release_date": "Released 2025, September 11",
+      "camera": "",
+      "battery_capacity": "1000 mAh",
+      "hardware": "Unisoc 8910 FF-S",
+      "image_b64": "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",
+      "image_url": "https://api.mobileapi.dev/devices/1088/thumb.png",
+      "network": {
+        "id": 366,
+        "technology": "GSM / HSPA / LTE",
+        "bands_2g": "GSM 900 / 1800",
+        "bands_3g": "HSDPA 2100",
+        "bands_4g": "1, 3, 5, 8, 28, 38, 39, 40, 41",
+        "bands_5g": "",
+        "speed": "HSPA, LTE"
+      },
+      "body": {
+        "id": 358,
+        "dimensions": "118.2 x 50.2 x 14.3 mm (4.65 x 1.98 x 0.56 in)",
+        "weight": "83.5 g (2.96 oz)",
+        "build": "",
+        "sim": "Nano-SIM + Nano-SIM",
+        "other": "Dust protected and splash resistant"
+      },
+      "display": {
+        "id": 365,
+        "type": "TFT",
+        "size": "2.0 inches, 12.4 cm2(~20.9% screen-to-body ratio)",
+        "resolution": "120 x 160 pixels, 4:3 ratio (~100 ppi density)",
+        "protection": "",
+        "other": ""
+      },
+      "platform": {
+        "id": 359,
+        "os": "",
+        "chipset": "Unisoc 8910 FF-S",
+        "cpu": "",
+        "gpu": ""
+      },
+      "memory": {
+        "id": 358,
+        "card_slot": "microSDHC",
+        "internal": "24MB",
+        "other": ""
+      },
+      "main_camera": null,
+      "selfie_camera": null,
+      "sound": {
+        "id": 366,
+        "loudspeaker": "Yes",
+        "audio_jack": "Yes"
+      },
+      "comms": {
+        "id": 365,
+        "wlan": "No",
+        "bluetooth": "4.2",
+        "positioning": "No",
+        "nfc": "No",
+        "radio": "Unspecified",
+        "usb": "USB Type-C"
+      },
+      "features": {
+        "id": 345,
+        "sensors": "",
+        "other": "MP3 player"
+      },
+      "battery": {
+        "id": 362,
+        "type": "Li-Ion 1000 mAh, removable",
+        "charging": ""
+      },
+      "misc": {
+        "id": 358,
+        "model_numbers": "",
+        "sar_us": "",
+        "sar_eu": "",
+        "price": "About 20 EUR"
+      }
+    },
+    {
+      "id": 1093,
+      "name": "Aura 2",
+      "manufacturer": {
+        "id": 38,
+        "name": "HMD",
+        "logo_b64": null,
+        "website_url": null
+      },
+      "manufacturer_name": "HMD",
+      "device_type": "phone",
+      "description": "HMD Aura 2 Android smartphone. Announced Feb 2025. Features 6.52″  display, Unisoc SC9863A chipset, 5000 mAh battery, 256 GB storage, 4 GB RAM.",
+      "colors": "Midnight Black, Icy Blue, Electric Purple",
+      "storage": "256GB",
+      "screen_resolution": "6.52\", 576x1280 pixels",
+      "weight": "185.4g",
+      "thickness": "9mm",
+      "release_date": "Released 2025, March 13",
+      "camera": "13MP",
+      "battery_capacity": "5000 mAh",
+      "hardware": "4GB RAM, Unisoc SC9863A",
+      "image_b64": "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",
+      "image_url": "https://api.mobileapi.dev/devices/1093/thumb.png",
+      "network": {
+        "id": 371,
+        "technology": "GSM / HSPA / LTE",
+        "bands_2g": "GSM 850 / 900 / 1800 / 1900",
+        "bands_3g": "HSDPA 850 / 900 / 2100",
+        "bands_4g": "1, 3, 5, 7, 8, 20, 28, 38, 40, 41",
+        "bands_5g": "",
+        "speed": "HSPA, LTE"
+      },
+      "body": {
+        "id": 363,
+        "dimensions": "166.4 x 76.9 x 9 mm (6.55 x 3.03 x 0.35 in)",
+        "weight": "185.4 g (6.53 oz)",
+        "build": "",
+        "sim": "Nano-SIM",
+        "other": "IP54 dust protected and water resistant (water splashes) - EU onlyRepair-it-yourself capable (display, back cover, battery and charging port repairs)"
+      },
+      "display": {
+        "id": 370,
+        "type": "IPS LCD, 460 nits (peak)",
+        "size": "6.52 inches, 102.6 cm2(~80.2% screen-to-body ratio)",
+        "resolution": "576 x 1280 pixels, 20:9 ratio (~215 ppi density)",
+        "protection": "",
+        "other": ""
+      },
+      "platform": {
+        "id": 364,
+        "os": "Android 14 (Go edition)",
+        "chipset": "Unisoc SC9863A (28 nm)",
+        "cpu": "Octa-core (4x1.6 GHz Cortex-A55 & 4x1.2 GHz Cortex-A55)",
+        "gpu": "IMG8322"
+      },
+      "memory": {
+        "id": 363,
+        "card_slot": "microSDXC",
+        "internal": "256GB 4GB RAM",
+        "other": ""
+      },
+      "main_camera": {
+        "id": 363,
+        "modules": "13 MP, (wide), AF",
+        "features": "LED flash, panorama",
+        "video": "Yes"
+      },
+      "selfie_camera": {
+        "id": 362,
+        "modules": "5 MP",
+        "features": "",
+        "video": "Yes"
+      },
+      "sound": {
+        "id": 371,
+        "loudspeaker": "Yes",
+        "audio_jack": "Yes"
+      },
+      "comms": {
+        "id": 370,
+        "wlan": "Wi-Fi 802.11 b/g/n",
+        "bluetooth": "5.2, A2DP, LE",
+        "positioning": "GPS, GALILEO",
+        "nfc": "No",
+        "radio": "FM radio",
+        "usb": "USB Type-C"
+      },
+      "features": {
+        "id": 350,
+        "sensors": "Fingerprint (side-mounted), accelerometer, proximity",
+        "other": ""
+      },
+      "battery": {
+        "id": 367,
+        "type": "5000 mAh",
+        "charging": "10W wired"
+      },
+      "misc": {
+        "id": 360,
+        "model_numbers": "",
+        "sar_us": "",
+        "sar_eu": "",
+        "price": "About 100 EUR"
+      }
+    },
+    {
+      "id": 1094,
+      "name": "Key",
+      "manufacturer": {
+        "id": 14,
+        "name": "BlackBerry",
+        "logo_b64": null,
+        "website_url": null
+      },
+      "manufacturer_name": "BlackBerry",
+      "device_type": "phone",
+      "description": "HMD Key Android smartphone. Announced Jan 2025. Features 6.52″  display, Unisoc SC9832E chipset, 4000 mAh battery, 32 GB storage, 2 GB RAM.",
+      "colors": "Black, Blue",
+      "storage": "32GB",
+      "screen_resolution": "6.52\", 576x1280 pixels",
+      "weight": "185.4g",
+      "thickness": "9mm",
+      "release_date": "Released 2025, February",
+      "camera": "8MP",
+      "battery_capacity": "4000 mAh",
+      "hardware": "2GB RAM, Unisoc SC9832E",
+      "image_b64": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCABkAEsDASIAAhEBAxEB/8QAHAAAAgIDAQEAAAAAAAAAAAAABgcEBQACAwEI/8QAShAAAQMDAgMEAwsGDAcAAAAAAQIDBAAFEQYhBxIxE0FRYSIyoQgUI0JxgZGxs8HRJFJzk7LwFRYmM0NUZHKSorTSJzVidIKDo//EABoBAAIDAQEAAAAAAAAAAAAAAAMEAgUGAQf/xAAwEQABAwMCAwUHBQAAAAAAAAABAAIDBBEhBTESIlETMkFhcQaBkaHB0fAUM7Gy4f/aAAwDAQACEQMRAD8ApuOPFLUiNSJ7FDMpT6n5B9+PLEeGw24W0pSlBG/TJ3JJ8TQNbuK2pJRUllFoLyUlfZdg+kqSBklOXN8AE42OAcZxULj7MQxf4jDpKUvx3k83ckplFQz5bfUe6gyyPstT2Jzz0ZIipJbQ2tKlvLwQkYT3ZIyo9wPU4FHkkc1xAOFV0lJDLC2SRoJO5KcumdfXydPjIlJiFpbiULDaXEqwTjYlw77+Boi4v3+6ab0RInWl91M1x9qOysrJ5Cs45gCeuBt5mldohChIt68gpVJQ2PlSUf7hTB90AM6IZHjdYv7ZqcT3OBBKBWU0McjOFoH4Eu02rUK1KdlasnGSs8zvI0lQ5u/dRyflNdTZL48jkVq+6pB70NISfpBBor95/DL2+MfrqYxC6bVtzpVC0W4PmfusJL7SVY2f8h9kDQtJ6ydUQ5qG4txQ4Ve//fxKS2BugM55u0z355cVPFkuzDYQnWl3WMn1m0KPXxJJoxmSDFjpiFSUpIKtzjqc/d7aoZCkocdS4lQ6+gdikgnbPsrJ1lNHFM5rNla0Gq6hWcziAPCwGfM3uqhUe/QnBJg6xugkoIUwohKMq8OZJ26ivprgxxmu924Z2abe4QmXHkcakSM8vaqbdW3zEeJCQT518xypSVPoXhtKgsEBSQd9jy9PZTH4GL/4YWzb+llf6l2kywXWpZLI2K5Ob+Xmlbx0ajOaljvyGw8GIj6m2yTyrUqUpIzj4oznGRnYd9DbidMTpVqg2SDNYU5BCZjkgN5E3CiVt8gGWtkjlV3ZxgjNMXifoa9almwbjZpERKmEPMOtSVFKVoLhVnIG/hjbuIocHDPXKd46bM052JZDhlqUpCCMEJ9EYJBIzucE4qEsbi84RKCqiFOwFwBsuGgpXaSbY3ggCUhec/nKR+FNDj4nOjY47jd4n7ZoV0Tw21JBu0NyeYLcdp1Li1tv8xwkg4AxvnGKLuOw5tIRfO7w9v8A2VOIFt7oVbMyR7OA3spHvLD7m3xz9dS2If8A01c+8syHMD46vrqs1NeI9ibDaGDKmKGQ0DgIHio/d1rbvnXhET5auTs4hc/m6C9fpdYvTLfLyoVFCgcH0gCrP0ffVDPlJU1znIU8zj1uqskEk9+4G3lRDer2vUbbEO62XsWGVlfbQ3SH2yRglBVlJyOqTsdtxsQI6tsF+0+lqStbk+yuBRizWgezIO/pD+jXtghW2R1NZ3UKeVrjKRgr1HQKiGOKOnmIElrb726HrbwUORIcU6lHvZstoUFKUrcqO23XA+U+dNTgg6gcM7aCtCT2srY/9y7QBoHS141jdUMsYbtbagJUzBASPzU56rPh3dTtRfwhCUaAgpGcB6UBv/aHarWxuw47H/FfTVsBL4Y3Auba46Xva/wRtDaw1ynqHFj6FqqSlsA5r2On0FHxWs/Ss12A22FFO6rIu6F6ykJ2AoJ44DOkYYxv/DEL7SjlO3XNA/G4g6Rh7n/nELdJwf5zxqDtkwzcKbrvWsSBKetNpcK5faKQ9IA9FrcghJ71efd8tBNvdcC/ypane9XOr1vA/R31aX7SRZuk+IhRDrThKFLGO0QTlKvnHtBqgbSY7q4cxJHo+v1KT4jyqxqp3McVh9PjpG03ZUp3yep8/sPqjCA5AQ6ypaEqbdB3GMFOfYR19vSjOK+3ariqIlSHID7YU42cFIzgFXt3HQ0lGLi9H5o63ErS36YIVgpI6H6/pq8jamdc51lvBDXKFK26bpOBvuBjp1FKR6k8O4TsktQ0CZ5BbkH8BT0t8aJBjtRoUdiNHb9RplAQhIznYDak1wjadXoKEpKQQX5Xf/aXaZNmuzD9stz8d5TrK2WilauqhgDfzpa8IpyWtAwkdms4flbjH9ZdqdTJxFtvP6IvsJA+P9WJr3uz1vzpitJ5UK8lrH+Y10x3YFeoTsv9I5+2qsxjaglbpgsFBuUOXJejKjXWRBS0olxLSEq7UZScHmBHxSP/ACOdqCuK8Z+JoKEzJmuTHE3iF8KvOSO0A7yT1BO56qOMDADDJpf8fHFN6BS4gqCkXKIoEdQQ4ag7YlMRFznBiN9fWyZIU3dbSlLsyMlSFx84MhBOeUHpkHJAPXJ3BxSS1deokm4IMZktuIyXWnE4KFDqhXj93Qiiq28TZkV9MG+x1vI5yDKSR2iQSQMpAwrGDuMHyNTda2G16rjNTWX2mpfrNTG0hQdH5q8esPPqPpFdqHCfmacrA6Xp1RodQ2LUGcuQ14yPf1+RHolm9K7ZoPI2Vy8qx06dNqipMjlQtBPL6qTnpjfH1GtLtAudnkmHNa7JeTyLJyhweKT3j9ziulsllgOKWyp6OrHatlWOf5COivAjv8QcUlbK9KpaZhaCMjwO6avDm4hekrekHdpxbahnoQ4T9ShVVwmjrc0HCWFtgF6TsQf6w5WthjPWSVNt76VI+GbfRkYC0LSClQ8iADW/CFeOH8D9LJ/1DlMh5NlUU2ntpp6ggYc4H+x+qarA+DX+mdH/ANFVhG/lW0fo6PB937RVYofJ5UVTbsFzNLz3QR5eHLiupTcIp/zmmIRS790EObhw6On5fFHh8c1F/dKYp/3m+oSqdcD7q3VOZPrKyP38qk2+/wA+1vlcNZCVK3QsZCz4H9/nqIUBIJBOSo7JGds7V3goK3mypGAMZSNts0kDlW9VMxkB4xcdEeTnIl4tvYy0IVlI5gNy0sjOUk9D9fQ99Bz+npDSuZuaw7125VIOPaP3613mOvRrgZLZOFdc/GB3wa9en8wyDsaM/qVT6RxCO0Z9ytUXWZIbjOTz+UNthknm9YBalBR8CeY5x8vWp3CRR/iDA/SSPt3KDnZpKxvneivhKvGgbf8A35H27lcjOVaVMRDC47kj+CnPH9Z4eEh77RVbLrxoFL8lJGCJLwI8PhVVuvp402VSNOAuPz0vPdAAHhy9kDHv+J9pTCV40u/dCKKOGMt0JKuSXGVjyDlQf3SjUxvM31CWTyQl1wNqATzEgjIOegrvHbUCFrxnvUkbCqpu/wBjeR2irmyhS9+VwEFPljHWuyL/AGPkHNdYpPQ+kfp6Uk0Lmods/lDT8CrSaedhJxjHsqqkFWUk9CPvrZ/UNkKcC6Rj85/Cq+RebQsejcGDg+J+fupp4BZup6KyWKSzmkA+RUlPrD5aNeFCv5BW/p67/wBu5S6cvVsbQViW24U7hKMkny6UwuEzcpegLctEdxSSp/BSkkfzy6BGcq+rsxj1X1bxd09Ats1N0gl1h2a4VvtpILZV3qAI2J78UvFrdAx2p/wp/CsrKcjy0XWZruWocBjKjPOPDo6f8KfwqsvMZm7W5+23FCZESSns3W1JGCCfk2PfmsrKIQLJVrnB1wUtLjwg0mzOfZQ5cglC8D4dPh/dqMeFGlh8e4/rx/trKykLBa0Pdbdcl8LdMJ6Kn/rx+FcXOGWmkjZU79cPwrKyuEKbXO6qTprhZpm46mt1tecnpZkyEtrKXU8wBONspI9lfeekNIae0lpqDpyyW5lm3wW+zaStIWo7klSlHcqJJJPiTWVlRKMzO6//2Q==",
+      "image_url": "https://api.mobileapi.dev/devices/1094/thumb.png",
+      "network": {
+        "id": 372,
+        "technology": "GSM / HSPA / LTE",
+        "bands_2g": "GSM 850 / 900 / 1800 / 1900",
+        "bands_3g": "HSDPA 850 / 900 / 2100",
+        "bands_4g": "1, 3, 5, 7, 8, 20, 28, 38, 40, 41",
+        "bands_5g": "",
+        "speed": "HSPA, LTE"
+      },
+      "body": {
+        "id": 364,
+        "dimensions": "166.4 x 76.9 x 9 mm (6.55 x 3.03 x 0.35 in)",
+        "weight": "185.4 g (6.53 oz)",
+        "build": "",
+        "sim": "Nano-SIM",
+        "other": "Dust and splash resistant"
+      },
+      "display": {
+        "id": 371,
+        "type": "IPS LCD, 460 nits (peak)",
+        "size": "6.52 inches, 102.6 cm2(~80.2% screen-to-body ratio)",
+        "resolution": "576 x 1280 pixels, 20:9 ratio (~215 ppi density)",
+        "protection": "",
+        "other": ""
+      },
+      "platform": {
+        "id": 365,
+        "os": "Android 14 (Go edition)",
+        "chipset": "Unisoc SC9832E",
+        "cpu": "Quad-core 1.3 GHz Cortex-A53",
+        "gpu": "Mali-820MP1"
+      },
+      "memory": {
+        "id": 364,
+        "card_slot": "microSDXC (uses shared SIM slot)",
+        "internal": "32GB 2GB RAM",
+        "other": ""
+      },
+      "main_camera": {
+        "id": 364,
+        "modules": "8 MP, (wide), AF",
+        "features": "LED flash, panorama",
+        "video": "Yes"
+      },
+      "selfie_camera": {
+        "id": 363,
+        "modules": "5 MP",
+        "features": "",
+        "video": "Yes"
+      },
+      "sound": {
+        "id": 372,
+        "loudspeaker": "Yes",
+        "audio_jack": "Yes"
+      },
+      "comms": {
+        "id": 371,
+        "wlan": "Wi-Fi 802.11 b/g/n",
+        "bluetooth": "4.2, A2DP, LE",
+        "positioning": "GPS, GALILEO",
+        "nfc": "No",
+        "radio": "FM radio",
+        "usb": "USB Type-C"
+      },
+      "features": {
+        "id": 351,
+        "sensors": "Accelerometer, proximity",
+        "other": ""
+      },
+      "battery": {
+        "id": 368,
+        "type": "4000 mAh",
+        "charging": "10W wired"
+      },
+      "misc": {
+        "id": 361,
+        "model_numbers": "",
+        "sar_us": "",
+        "sar_eu": "",
+        "price": "About 70 EUR"
+      }
+    },
+    {
+      "id": 1096,
+      "name": "Fusion",
+      "manufacturer": {
+        "id": 66,
+        "name": "Motorola",
+        "logo_b64": null,
+        "website_url": null
+      },
+      "manufacturer_name": "Motorola",
+      "device_type": "phone",
+      "description": "HMD Fusion Android smartphone. Announced Sep 2024. Features 6.56″  display, Snapdragon 4 Gen 2 chipset, 5000 mAh battery, 256 GB storage, 8 GB RAM.",
+      "colors": "Noir, Barca Fusion edition",
+      "storage": "128GB, 256GB",
+      "screen_resolution": "6.56\", 720x1612 pixels",
+      "weight": "202.5g",
+      "thickness": "8.3mm",
+      "release_date": "Released 2024, September 11",
+      "camera": "108MP",
+      "battery_capacity": "5000 mAh",
+      "hardware": "4-8GB RAM, Snapdragon 4 Gen 2",
+      "image_b64": "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",
+      "image_url": "https://api.mobileapi.dev/devices/1096/thumb.png",
+      "network": {
+        "id": 374,
+        "technology": "GSM / HSPA / LTE / 5G",
+        "bands_2g": "GSM 850 / 900 / 1800 / 1900",
+        "bands_3g": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+        "bands_4g": "1, 3, 5, 7, 8, 20, 28, 32, 38, 40, 41 - International\n2, 4, 5, 7, 8, 12, 13, 25, 26, 28, 41, 66, 71 - USA",
+        "bands_5g": "1, 3, 5, 7, 8, 20, 26, 28, 38, 40, 41, 77, 78 SA/NSA/Sub6 - International\n2, 4, 5, 7, 25, 41, 66, 71, 77, 78 SA/NSA/Sub6 - USA",
+        "speed": "HSPA, LTE, 5G"
+      },
+      "body": {
+        "id": 366,
+        "dimensions": "164.2 x 75.5 x 8.3 mm (6.46 x 2.97 x 0.33 in)",
+        "weight": "202.5 g (7.16 oz)",
+        "build": "Glass front, plastic frame, plastic back",
+        "sim": "· Nano-SIM +eSIM· Nano-SIM + Nano-SIM",
+        "other": "IP54 dust protected and water resistant (water splashes)HMD Fusion toolkit: CAD file and API access for building your own outfitsRepair-it-yourself capable (display, back cover, battery and charging port repairs)"
+      },
+      "display": {
+        "id": 373,
+        "type": "IPS LCD, 90Hz, 480 nits (typ), 600 nits (peak)",
+        "size": "6.56 inches, 103.4 cm2(~83.4% screen-to-body ratio)",
+        "resolution": "720 x 1612 pixels, 20:9 ratio (~269 ppi density)",
+        "protection": "",
+        "other": ""
+      },
+      "platform": {
+        "id": 367,
+        "os": "Android 14, up to 2 major Android upgrades",
+        "chipset": "Qualcomm SM4450 Snapdragon 4 Gen 2 (4 nm)",
+        "cpu": "Octa-core (2x2.2 GHz Cortex-A78 & 6x2.0 GHz Cortex-A55)",
+        "gpu": "Adreno 613"
+      },
+      "memory": {
+        "id": 366,
+        "card_slot": "microSDXC (uses shared SIM slot)",
+        "internal": "128GB 4GB RAM, 128GB 6GB RAM, 256GB 8GB RAM",
+        "other": ""
+      },
+      "main_camera": {
+        "id": 366,
+        "modules": "108 MP, (wide), AF2 MP, (depth)",
+        "features": "LED flash, HDR",
+        "video": "1080p@30fps, gyro-EIS"
+      },
+      "selfie_camera": {
+        "id": 365,
+        "modules": "50 MP",
+        "features": "",
+        "video": "Yes"
+      },
+      "sound": {
+        "id": 374,
+        "loudspeaker": "Yes",
+        "audio_jack": "Yes"
+      },
+      "comms": {
+        "id": 373,
+        "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6",
+        "bluetooth": "5.1, A2DP, LE, aptX Adaptive",
+        "positioning": "GPS, GALILEO, GLONASS, BDS",
+        "nfc": "Yes",
+        "radio": "Unspecified",
+        "usb": "USB Type-C 2.0, OTG, magnetic accessory connector pins"
+      },
+      "features": {
+        "id": 353,
+        "sensors": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass",
+        "other": ""
+      },
+      "battery": {
+        "id": 370,
+        "type": "5000 mAh, user replaceable",
+        "charging": "33W wired, PD, QC"
+      },
+      "misc": {
+        "id": 362,
+        "model_numbers": "",
+        "sar_us": "",
+        "sar_eu": "",
+        "price": "£ 315.00 / € 239.99 / $ 245.09"
+      }
+    },
+    {
+      "id": 1097,
+      "name": "Barbie",
+      "manufacturer": {
+        "id": 38,
+        "name": "HMD",
+        "logo_b64": null,
+        "website_url": null
+      },
+      "manufacturer_name": "HMD",
+      "device_type": "phone",
+      "description": "HMD Barbie smartphone. Announced Aug 2024. Features 2.8″  display, Unisoc T107 chipset, 1450 mAh battery, 4 GB storage, 512 MB RAM.",
+      "colors": "Power Pink",
+      "storage": "4GB 512MB RAM",
+      "screen_resolution": "2.8\", 240x320 pixels",
+      "weight": "123.5g",
+      "thickness": "10.9mm",
+      "release_date": "Released 2024, August 28",
+      "camera": "5MP",
+      "battery_capacity": "1450 mAh",
+      "hardware": "512GB RAM, Unisoc T107",
+      "image_b64": "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",
+      "image_url": "https://api.mobileapi.dev/devices/1097/thumb.png",
+      "network": {
+        "id": 375,
+        "technology": "GSM / HSPA / LTE",
+        "bands_2g": "GSM 850 / 900 / 1800 / 1900",
+        "bands_3g": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+        "bands_4g": "1, 2, 3, 4, 5, 7, 8, 20, 28, 38, 39, 40, 41",
+        "bands_5g": "",
+        "speed": "HSPA, LTE"
+      },
+      "body": {
+        "id": 367,
+        "dimensions": "Unfolded: 201 x 55.1 x 10.9 mmFolded: 108.4 x 55.1 x 18.9 mm",
+        "weight": "123.5 g (4.37 oz)",
+        "build": "",
+        "sim": "Nano-SIM + Nano-SIM",
+        "other": ""
+      },
+      "display": {
+        "id": 374,
+        "type": "TFT LCD",
+        "size": "2.8 inches, 24.3 cm2(~21.9% screen-to-body ratio)",
+        "resolution": "240 x 320 pixels, 4:3 ratio (~143 ppi density)",
+        "protection": "",
+        "other": "Secondary external 1.77\" display"
+      },
+      "platform": {
+        "id": 368,
+        "os": "KaiOS 3.1 (USA only)",
+        "chipset": "Unisoc T107 (22 nm) - INTQualcomm QM215 Snapdragon 215 (28 nm) - USA",
+        "cpu": "1.0 GHz Cortex-A7 - INTQuad-core 1.3 GHz Cortex-A53 - USA",
+        "gpu": "Adreno 308 (USA)"
+      },
+      "memory": {
+        "id": 367,
+        "card_slot": "microSDHC",
+        "internal": "4GB 512MB RAM, 128MB 64MB RAM",
+        "other": ""
+      },
+      "main_camera": {
+        "id": 367,
+        "modules": "0.3 MP (INT)5 MP (USA)",
+        "features": "LED flash",
+        "video": "Yes"
+      },
+      "selfie_camera": {
+        "id": 366,
+        "modules": "No",
+        "features": "",
+        "video": ""
+      },
+      "sound": {
+        "id": 375,
+        "loudspeaker": "Yes",
+        "audio_jack": "Yes"
+      },
+      "comms": {
+        "id": 374,
+        "wlan": "Wi-Fi 802.11 b/g/n (USA only)",
+        "bluetooth": "5.0, A2DP (INT), 4.2, A2DP (USA)",
+        "positioning": "Yes (USA)",
+        "nfc": "No",
+        "radio": "Wireless FM radio",
+        "usb": "USB Type-C"
+      },
+      "features": {
+        "id": 354,
+        "sensors": "No",
+        "other": ""
+      },
+      "battery": {
+        "id": 371,
+        "type": "Li-Ion 1450 mAh, removable",
+        "charging": ""
+      },
+      "misc": {
+        "id": 363,
+        "model_numbers": "TA-1681",
+        "sar_us": "",
+        "sar_eu": "",
+        "price": "£ 57.99 / € 54.00 / $ 97.28"
+      }
+    },
+    {
+      "id": 1098,
+      "name": "Crest Max",
+      "manufacturer": {
+        "id": 38,
+        "name": "HMD",
+        "logo_b64": null,
+        "website_url": null
+      },
+      "manufacturer_name": "HMD",
+      "device_type": "phone",
+      "description": "HMD Crest Max Android smartphone. Announced Jul 2024. Features 6.67″  display, Unisoc T760 chipset, 5000 mAh battery, 256 GB storage, 8 GB RAM.",
+      "colors": "Aqua Green, Royal Pink, Deep Purple",
+      "storage": "256GB",
+      "screen_resolution": "6.67\", 1080x2400 pixels",
+      "weight": "205g",
+      "thickness": "8.4mm",
+      "release_date": "Released 2024, August 07",
+      "camera": "64MP",
+      "battery_capacity": "5000 mAh",
+      "hardware": "8GB RAM, Unisoc T760",
+      "image_b64": "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",
+      "image_url": "https://api.mobileapi.dev/devices/1098/thumb.png",
+      "network": {
+        "id": 376,
+        "technology": "GSM / HSPA / LTE / 5G",
+        "bands_2g": "GSM 850 / 900 / 1800 / 1900",
+        "bands_3g": "HSDPA 850 / 900 / 2100",
+        "bands_4g": "1, 3, 5, 8, 28, 40, 41",
+        "bands_5g": "1, 3, 28, 40, 78 SA/NSA",
+        "speed": "HSPA, LTE, 5G"
+      },
+      "body": {
+        "id": 368,
+        "dimensions": "163.9 x 76.4 x 8.4 mm (6.45 x 3.01 x 0.33 in)",
+        "weight": "205 g (7.23 oz)",
+        "build": "",
+        "sim": "Nano-SIM + Nano-SIM",
+        "other": "Repair-it-yourself capable (display, back cover, battery and charging port repairs)Dust and splash resistant"
+      },
+      "display": {
+        "id": 375,
+        "type": "OLED",
+        "size": "6.67 inches, 107.4 cm2(~85.8% screen-to-body ratio)",
+        "resolution": "1080 x 2400 pixels, 20:9 ratio (~395 ppi density)",
+        "protection": "",
+        "other": ""
+      },
+      "platform": {
+        "id": 369,
+        "os": "Android 14",
+        "chipset": "Unisoc T760 (6 nm)",
+        "cpu": "Octa-core (1x2.2 GHz Cortex-A76 & 3x Cortex-A76 & 4x Cortex-A55)",
+        "gpu": "Mali-G57"
+      },
+      "memory": {
+        "id": 368,
+        "card_slot": "microSDXC (uses shared SIM slot)",
+        "internal": "256GB 8GB RAM",
+        "other": ""
+      },
+      "main_camera": {
+        "id": 368,
+        "modules": "64 MP, (wide), AF5 MP, (ultrawide)2 MP, (macro)",
+        "features": "LED flash, HDR",
+        "video": "1080p@30fps"
+      },
+      "selfie_camera": {
+        "id": 367,
+        "modules": "50 MP",
+        "features": "",
+        "video": "Yes"
+      },
+      "sound": {
+        "id": 376,
+        "loudspeaker": "Yes",
+        "audio_jack": "Yes"
+      },
+      "comms": {
+        "id": 375,
+        "wlan": "Wi-Fi 802.11 a/b/g/n/ac",
+        "bluetooth": "5.0, A2DP, LE",
+        "positioning": "GPS, GALILEO",
+        "nfc": "No",
+        "radio": "Unspecified",
+        "usb": "USB Type-C"
+      },
+      "features": {
+        "id": 355,
+        "sensors": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass",
+        "other": ""
+      },
+      "battery": {
+        "id": 372,
+        "type": "5000 mAh, user replaceable",
+        "charging": "33W wired"
+      },
+      "misc": {
+        "id": 364,
+        "model_numbers": "",
+        "sar_us": "",
+        "sar_eu": "",
+        "price": "About 180 EUR"
+      }
+    },
+    {
+      "id": 1099,
+      "name": "Crest",
+      "manufacturer": {
+        "id": 38,
+        "name": "HMD",
+        "logo_b64": null,
+        "website_url": null
+      },
+      "manufacturer_name": "HMD",
+      "device_type": "phone",
+      "description": "HMD Crest Android smartphone. Announced Jul 2024. Features 6.67″  display, Unisoc T760 chipset, 5000 mAh battery, 128 GB storage, 6 GB RAM.",
+      "colors": "Midnight Blue",
+      "storage": "128GB",
+      "screen_resolution": "6.67\", 1080x2400 pixels",
+      "weight": "205g",
+      "thickness": "8.4mm",
+      "release_date": "Released 2024, August 07",
+      "camera": "50MP",
+      "battery_capacity": "5000 mAh",
+      "hardware": "6GB RAM, Unisoc T760",
+      "image_b64": "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",
+      "image_url": "https://api.mobileapi.dev/devices/1099/thumb.png",
+      "network": {
+        "id": 377,
+        "technology": "GSM / HSPA / LTE / 5G",
+        "bands_2g": "GSM 850 / 900 / 1800 / 1900",
+        "bands_3g": "HSDPA 850 / 900 / 2100",
+        "bands_4g": "1, 3, 5, 8, 28, 40, 41",
+        "bands_5g": "1, 3, 28, 40, 78 SA/NSA",
+        "speed": "HSPA, LTE, 5G"
+      },
+      "body": {
+        "id": 369,
+        "dimensions": "163.9 x 76.4 x 8.4 mm (6.45 x 3.01 x 0.33 in)",
+        "weight": "205 g (7.23 oz)",
+        "build": "",
+        "sim": "Nano-SIM + Nano-SIM",
+        "other": "Repair-it-yourself capable (display, back cover, battery and charging port repairs)Dust and splash resistant"
+      },
+      "display": {
+        "id": 376,
+        "type": "OLED",
+        "size": "6.67 inches, 107.4 cm2(~85.8% screen-to-body ratio)",
+        "resolution": "1080 x 2400 pixels, 20:9 ratio (~395 ppi density)",
+        "protection": "",
+        "other": ""
+      },
+      "platform": {
+        "id": 370,
+        "os": "Android 14",
+        "chipset": "Unisoc T760 (6 nm)",
+        "cpu": "Octa-core (1x2.2 GHz Cortex-A76 & 3x Cortex-A76 & 4x Cortex-A55)",
+        "gpu": "Mali-G57"
+      },
+      "memory": {
+        "id": 369,
+        "card_slot": "microSDXC (uses shared SIM slot)",
+        "internal": "128GB 6GB RAM",
+        "other": ""
+      },
+      "main_camera": {
+        "id": 369,
+        "modules": "50 MP, (wide), AF2 MP, (depth)",
+        "features": "LED flash, HDR",
+        "video": "1080p@30fps"
+      },
+      "selfie_camera": {
+        "id": 368,
+        "modules": "50 MP",
+        "features": "",
+        "video": "Yes"
+      },
+      "sound": {
+        "id": 377,
+        "loudspeaker": "Yes",
+        "audio_jack": "Yes"
+      },
+      "comms": {
+        "id": 376,
+        "wlan": "Wi-Fi 802.11 a/b/g/n/ac",
+        "bluetooth": "5.0, A2DP, LE",
+        "positioning": "GPS, GALILEO",
+        "nfc": "No",
+        "radio": "Unspecified",
+        "usb": "USB Type-C"
+      },
+      "features": {
+        "id": 356,
+        "sensors": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass",
+        "other": ""
+      },
+      "battery": {
+        "id": 373,
+        "type": "5000 mAh, user replaceable",
+        "charging": "33W wired"
+      },
+      "misc": {
+        "id": 365,
+        "model_numbers": "",
+        "sar_us": "",
+        "sar_eu": "",
+        "price": "$ 168.90"
+      }
+    },
+    {
+      "id": 20443,
+      "name": "Fly E151 Wi-Fi",
+      "manufacturer": {
+        "id": 132,
+        "name": "Fly",
+        "logo_b64": null,
+        "website_url": null
+      },
+      "manufacturer_name": "Fly",
+      "device_type": "phone",
+      "description": "",
+      "colors": "",
+      "storage": "47 MBBuy memory card",
+      "screen_resolution": "3.20\", 240 x 400 pixels",
+      "weight": "100.00",
+      "thickness": "13.20mm",
+      "release_date": "",
+      "camera": "",
+      "battery_capacity": "1000 mAh",
+      "hardware": "",
+      "image_b64": "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",
+      "image_url": "https://api.mobileapi.dev/devices/20443/thumb.png",
+      "network": null,
+      "body": {
+        "id": 19798,
+        "dimensions": "111.00 x 54.00 x 13.20 mm",
+        "weight": "100.00 g",
+        "build": "",
+        "sim": "",
+        "other": ""
+      },
+      "display": {
+        "id": 19848,
+        "type": "Color / TFT256k colors240 x 400 px (3.20\") 146 ppi",
+        "size": "3.20 inches",
+        "resolution": "240 x 400 pixels",
+        "protection": "",
+        "other": ""
+      },
+      "platform": null,
+      "memory": {
+        "id": 19860,
+        "card_slot": "microSD, microSDHC (up to 32 GB)",
+        "internal": "47 MBBuy memory card",
+        "other": ""
+      },
+      "main_camera": null,
+      "selfie_camera": null,
+      "sound": null,
+      "comms": null,
+      "features": null,
+      "battery": {
+        "id": 19677,
+        "type": "Li-Ion 1000 mAh",
+        "charging": ""
+      },
+      "misc": null
+    },
+    {
+      "id": 31395,
+      "name": "C3",
+      "manufacturer": {
+        "id": 21,
+        "name": "Celkon",
+        "logo_b64": null,
+        "website_url": null
+      },
+      "manufacturer_name": "Celkon",
+      "device_type": "phone",
+      "description": "",
+      "colors": "Gray",
+      "storage": "0 MB",
+      "screen_resolution": "2.20\", 220 x 176 pixels",
+      "weight": "129.00",
+      "thickness": "13.00mm",
+      "release_date": "",
+      "camera": "",
+      "battery_capacity": "1300 mAh",
+      "hardware": "",
+      "image_b64": null,
+      "image_url": null,
+      "network": null,
+      "body": {
+        "id": 30370,
+        "dimensions": "117.00 x 61.00 x 13.00 mm",
+        "weight": "129.00 g",
+        "build": "",
+        "sim": "miniSIM, miniSIM",
+        "other": ""
+      },
+      "display": {
+        "id": 30798,
+        "type": "Color / TFT64 thousands colors220 x 176 px (2.20\") 128 ppi∼21.3% screen-to-body ratio",
+        "size": "2.20 inches",
+        "resolution": "220 x 176 pixels",
+        "protection": "",
+        "other": ""
+      },
+      "platform": null,
+      "memory": {
+        "id": 30810,
+        "card_slot": "microSD, microSDHC (up to 4 GB)",
+        "internal": "0 MB",
+        "other": ""
+      },
+      "main_camera": null,
+      "selfie_camera": null,
+      "sound": null,
+      "comms": null,
+      "features": null,
+      "battery": {
+        "id": 30473,
+        "type": "Li-Ion 1300 mAh",
+        "charging": ""
+      },
+      "misc": null
+    },
+    {
+      "id": 7912,
+      "name": "C669",
+      "manufacturer": {
+        "id": 21,
+        "name": "Celkon",
+        "logo_b64": null,
+        "website_url": null
+      },
+      "manufacturer_name": "Celkon",
+      "device_type": "phone",
+      "description": "Celkon C669 phone. Announced  2010. Features 2.4″  display, 1.3 MP primary camera, 1300 mAh battery.",
+      "colors": "Black/Red",
+      "storage": "",
+      "screen_resolution": "2.4\", 240x320 pixels",
+      "weight": "96g",
+      "thickness": "11mm",
+      "release_date": "Released 2010",
+      "camera": "1.3MP",
+      "battery_capacity": "1300 mAh",
+      "hardware": "",
+      "image_b64": "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",
+      "image_url": "https://api.mobileapi.dev/devices/7912/thumb.png",
+      "network": {
+        "id": 7184,
+        "technology": "GSM",
+        "bands_2g": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+        "bands_3g": "",
+        "bands_4g": "",
+        "bands_5g": "",
+        "speed": ""
+      },
+      "body": {
+        "id": 7176,
+        "dimensions": "115 x 46 x 11 mm (4.53 x 1.81 x 0.43 in)",
+        "weight": "96 g (3.39 oz)",
+        "build": "",
+        "sim": "Dual SIM (Mini-SIM)",
+        "other": "Flashlight"
+      },
+      "display": {
+        "id": 7183,
+        "type": "TFT",
+        "size": "2.4 inches, 17.8 cm2(~33.7% screen-to-body ratio)",
+        "resolution": "240 x 320 pixels, 4:3 ratio (~167 ppi density)",
+        "protection": "",
+        "other": ""
+      },
+      "platform": null,
+      "memory": {
+        "id": 7176,
+        "card_slot": "microSDHC (dedicated slot)",
+        "internal": "",
+        "other": ""
+      },
+      "main_camera": {
+        "id": 6580,
+        "modules": "1.3 MP",
+        "features": "",
+        "video": "Yes"
+      },
+      "selfie_camera": {
+        "id": 6553,
+        "modules": "No",
+        "features": "",
+        "video": ""
+      },
+      "sound": {
+        "id": 7184,
+        "loudspeaker": "Yes",
+        "audio_jack": "No"
+      },
+      "comms": {
+        "id": 7183,
+        "wlan": "No",
+        "bluetooth": "Yes",
+        "positioning": "No",
+        "nfc": "",
+        "radio": "Stereo FM radio",
+        "usb": "Proprietary"
+      },
+      "features": {
+        "id": 7090,
+        "sensors": "",
+        "other": "Audio/video player"
+      },
+      "battery": {
+        "id": 7176,
+        "type": "Removable Li-Ion 1300 mAh battery",
+        "charging": ""
+      },
+      "misc": {
+        "id": 5682,
+        "model_numbers": "",
+        "sar_us": "",
+        "sar_eu": "",
+        "price": "About 30 EUR"
+      }
+    },
+    {
+      "id": 1101,
+      "name": "Aura",
+      "manufacturer": {
+        "id": 38,
+        "name": "HMD",
+        "logo_b64": null,
+        "website_url": null
+      },
+      "manufacturer_name": "HMD",
+      "device_type": "phone",
+      "description": "HMD Aura Android smartphone. Announced May 2024. Features 6.56″  display, Unisoc SC9863A1 chipset, 5000 mAh battery, 128 GB storage, 4 GB RAM.",
+      "colors": "Glacier Green, Indigo Black",
+      "storage": "64GB, 128GB",
+      "screen_resolution": "6.56\", 720x1612 pixels",
+      "weight": "175g",
+      "thickness": "8.9mm",
+      "release_date": "Released 2024, May 23",
+      "camera": "13MP",
+      "battery_capacity": "5000 mAh",
+      "hardware": "4GB RAM, Unisoc SC9863A1",
+      "image_b64": "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",
+      "image_url": "https://api.mobileapi.dev/devices/1101/thumb.png",
+      "network": {
+        "id": 379,
+        "technology": "GSM / HSPA / LTE",
+        "bands_2g": "GSM 850 / 900 / 1800 / 1900",
+        "bands_3g": "HSDPA 850 / 900 / 2100",
+        "bands_4g": "1, 3, 5, 8, 20, 28, 38, 41",
+        "bands_5g": "",
+        "speed": "HSPA, LTE"
+      },
+      "body": {
+        "id": 371,
+        "dimensions": "163.9 x 75.5 x 8.9 mm (6.45 x 2.97 x 0.35 in)",
+        "weight": "175 g (6.17 oz)",
+        "build": "",
+        "sim": "Nano-SIM + Nano-SIM",
+        "other": ""
+      },
+      "display": {
+        "id": 378,
+        "type": "IPS LCD, 480 nits (typ)",
+        "size": "6.56 inches, 101.4 cm2(~82.0% screen-to-body ratio)",
+        "resolution": "720 x 1612 pixels (~268 ppi density)",
+        "protection": "",
+        "other": ""
+      },
+      "platform": {
+        "id": 372,
+        "os": "Android 13",
+        "chipset": "Unisoc SC9863A1 (22 nm)",
+        "cpu": "Octa-core (4x1.6 GHz Cortex-A55 & 4x1.2 GHz Cortex-A55)",
+        "gpu": "IMG8322"
+      },
+      "memory": {
+        "id": 371,
+        "card_slot": "microSDXC (uses shared SIM slot)",
+        "internal": "64GB 4GB RAM, 128GB 4GB RAM",
+        "other": ""
+      },
+      "main_camera": {
+        "id": 371,
+        "modules": "13 MP, (wide), AFAuxiliary lens",
+        "features": "LED flash, HDR",
+        "video": "1080p@30fps"
+      },
+      "selfie_camera": {
+        "id": 370,
+        "modules": "5 MP",
+        "features": "",
+        "video": "Yes"
+      },
+      "sound": {
+        "id": 379,
+        "loudspeaker": "Yes",
+        "audio_jack": "Yes"
+      },
+      "comms": {
+        "id": 378,
+        "wlan": "Wi-Fi 802.11 b/g/n",
+        "bluetooth": "4.2, A2DP",
+        "positioning": "GPS",
+        "nfc": "No",
+        "radio": "Unspecified",
+        "usb": "USB Type-C 2.0, OTG"
+      },
+      "features": {
+        "id": 358,
+        "sensors": "Fingerprint (rear-mounted), accelerometer, proximity",
+        "other": ""
+      },
+      "battery": {
+        "id": 375,
+        "type": "5000 mAh",
+        "charging": "10W wired"
+      },
+      "misc": {
+        "id": 367,
+        "model_numbers": "",
+        "sar_us": "",
+        "sar_eu": "",
+        "price": "About 110 EUR"
+      }
+    },
+    {
+      "id": 1102,
+      "name": "T21",
+      "manufacturer": {
+        "id": 93,
+        "name": "Samsung",
+        "logo_b64": null,
+        "website_url": null
+      },
+      "manufacturer_name": "Samsung",
+      "device_type": "phone",
+      "description": "HMD T21 Android tablet. Announced May 2024. Features 10.36″  display, Unisoc Tiger T612 chipset, 8200 mAh battery, 128 GB storage, 4 GB RAM, Scratch-resistant glass.",
+      "colors": "Black Steel",
+      "storage": "64GB, 128GB",
+      "screen_resolution": "10.36\", 1200x2000 pixels",
+      "weight": "467g",
+      "thickness": "7.5mm",
+      "release_date": "Released 2024, May 15",
+      "camera": "8MP",
+      "battery_capacity": "8200 mAh",
+      "hardware": "4GB RAM, Unisoc Tiger T612",
+      "image_b64": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCABkAEsDASIAAhEBAxEB/8QAHAAAAQQDAQAAAAAAAAAAAAAABwAFBggCAwQB/8QARRAAAQIEAwQFBQ0GBwAAAAAAAQIDAAQFEQYSIRMxQVEHYYGRsRQiMnFzCBUYJTVCV2KClKHR0xZSY3SywSMmNDdTcpL/xAAaAQACAwEBAAAAAAAAAAAAAAAFBgACBAED/8QAKhEAAQMDBAIBAgcAAAAAAAAAAQACAwQRMQUTIVESQRTB8AYiMmFxobH/2gAMAwEAAhEDEQA/AIr0wY0rH7ZzLYWxMFxvbLcmSpWa5NgNQAAALDhpAv6R8TVh2gyUsh4yZdmVbTyZamw4nZoUkEA/XuR6uUErHdDdnsRPzKBJLJYDJRNJWdmoDRachHnC/G46jAp6VKa7TZClNvvpecXMOKJSCAAEtpA16hFzhUARMR7nSr5E7TpDWleUZgmUcIBtqAdoLjsEe/B0qv0iu/cnP1YsGd/d4QoIinjthDPlS9qvnwdKpb/cV37k5+rC+DpVfpEd+5OfqxYOFE+PH0p8qXtV8+DpVfpEd+5Ofqx6Pc61YbukV77m5+rFgo6aXMJlZ9p5wXbByuDmg6H8NeyOGnjHpQVMpOVWLFfQXWaDhiqVxGPXZk0+UcmtkZZxvOEDMQFbQ2NhyjgwP7oPpKoGFZGjytdedYlUqQ2p+zi8uYkAqUCSBew10AAiwvug6UqTwBiR1t1Ya97n9As5T5h4XsYpDTUnyJvfx8TGaojazxLfa2U0jngh3pWbxMv47nPamBD04m7NHP8AGc8EwVsTr+PJ32pgS9NZvL0n2y/BMeJK9hlXDO/u8IUI7+7whQWQVKFC4gcTuHExm4060QHWltlQuMySL98RRYQ45qPR2/KK0+C6BmDIQpSU9aiBZR6t3rjlkZR6ddU2zk8xBWsrVYJSLXJ744saVBpNKRJNOMzTzaci3wCUADcB+8QNOWkdaA94ao5xYwuA5UL6d5/36wXW6iwHlSzVMfQQsZRqk2UB+F+sRUKlf6Bv7XiYsjiWtuDAWKKZMLBWimPpQbWzIKCB2g6d0VvpIvT2/teJjPqTNtzW+rLVpUnmxzuyrCYoX8ezw/jKgV9MhvLUr26/BMErFDnx/Pe2V4wMelxWaUpn8wrwEDyiAyrlHfGcu0p99DKTYrNr8uZ7BGB3xslHQ1MJWRmA9MfV4wWOEFTtNVSVk3RK09pptxWgKRrbmTvj2pllyjZ3nkIW2sKSpZ330I7vCGmphiVc27aE23kgC5HrjgxSpuo4deZSStaAHmwheUrtqU34BSbju4x7NgafGyFtrXtc7yNz0sq7XJOgYWl62HmkvzM80iSacPnTLSVHam37hF08resRHMQFDcmqYlSFSKhml3Fq9Js6p67gaHrBgW4zqk5Vp1U1OPFa0pDbYAsltCfRQhO5KRwA8STDWxiSrzbUth9K1LZQ06tIvutqb8xroOZgmyh2gCTlZRqXyLho4AXP0grqfvNPTrco55K9JujOgZklCkkG9iSN3G26BFSPk9rt8TBbrezGBKowVrQ4xLPkDNcFKgTbXhe+nXAlpPye3u+d4mA+tX3Wgj0mHQvHZJab3KN2KHPj+f8Abq8YG/SqrNJ07+YV4CJ/ihz4/n/br8YH/SO2t+RkigXyPknuECDhFxlXfp0swomanD/gJ0Si+rhtu01tz57ucb26mH5tEvKy+wZQcykobsFHs39sMuLp9+kYScnWJ/ybyY7R4iWbdCUmwsc19ATckWtfqgfYir8g9RWGK3Xpl2og7YmRlVMJRceam6coXYfO3Ek20tBynpjMUv1NU2AffKnWPHjSXEggplpgFTJtolQ9JH4gjqMDdeKXJdpcsVap1bN+HKGXFGPWpjC0vSmVTrz8utJS++QQpIvvBUTexI7Yj1L2uIEKmUFaZdtQQpSdCVn0W0nmbjXgNeUHKeFsUVpMhKtVDLPU7kRs0/0tNXmUTWeYbeBClqBATbKQYjrE4ZOtyzw85AUUuH6ivNUO439YESZ7D6qbMzLbs2y82bWQjNZKh1neLd8MFTl22FeezcK3ZY1/qZYhXpnxteWNN1nitzJRqikKNlSriTbj5pgbUw55FtWUJuToNBvMTfEbri8OPPkXS7LuJHMFIsb9e4+ojnEIpHye19rxMLGvkOlZbr6ps/D8bo4HA9/RF7Ea2jiCpbVa0jauZcovdV9AeQ64jNaYE1JkWuU3I7oeMSuf5gqH8yv+oxz09sTCXkngkQCOEcA5Vj261K1Fl2WmQHGJhotOo4KQpNiO4wBcbTK6dWZmmuJS2iVVsmglRI2YHmEEkk+bY3MPDddmZCaXLu5m3G1FKkLBCkkGxBHAgiIV0sz5n9hUkkZ0gNO24j5p/EjtEPETNgFwwkJjxVyiJ/fCbpmptuEthwZjoLwQaLWZNJoLEihqXpbac6G0pJXtQCSFm+qtoLk8dNwtAH8qVnCs2oMSSkzM8yTsQ6VEh5LaUklBA9Kw7L+qK7gkNz6RaegMcRaw2uitVJqTzHZOPuun5zjYSB6hc6wwz76kMl1BN0akA7xxjZOP7ZhqZSkoLiQopO9J4jsNxDXUJpLbClKUEpAuSToI3PNhe6V6eDkABc1Zn0OUGosvDaNOSq1NkH0HMuiu0aHs5RBKR8nNdviYedu7NyVQlZZp15KZd1xORBOVASSq/IDfrwhmo9ve5rt8TCprbg+RpHSfNJiMMbmntE2tS81OYgqolJdx8tPOuOBFvNSFHXr9QuTwBjbg9AfcmhoRkT4xsZrTFJxBiQzDcysTjEzKI2KykpWpy6VGy03At1nXQA6xn0aI2s1OpsNG0bv+0BjhFAo3jSpPy08mcCs+1cIcJN1Xvcnrvz5iGOrVATMqttSsyFpsY1VVyZmlvNvpcCsxBukixBhjUp8IyFC9ND5phyfKBjBS/TUIDRcfmCltDw5Jyi0PvLTNvJIULmyB6h/cwS8PplJCnPTUqGpIzZyIskqUWwdd2tirnvsIEeFJ2bmn26coKuohLbitAm+lieUT2aeDCG2Gc2yaSEIvvI59pue2NMBicweHCFamJ2vLXuuTj+F0VaSDrBcZqSmks3zASqVIA4DUix6uMQueUh1ATMrcmClWgy7NPUbA3J7YfqvU1OJal1myEIFkiwF+J0598NLzSHRdCgD1xWR9+FWmBjAv/n2VNsJvSL3RDjASjDUvONybyZgJ3qZLV0W+rmC78zv4QHKR8nNfa/qMSgVN2kSFS8nUCmakXpV5KjYLQtNu8GxHWBEWpJtT2tRx8TC1q3MoP7Jn00jbNkavdCYTp+Feles0ukPzSZQu7dCHFJXsy4AspBKb5QVG17m1tYjmCZmZp1UUWnitLqMq0LSLHuAMKFApb/amE1U31A3Q33q/OGqdmXHL5gO8/nChRxXUeqbKHklK7kREKpRZVbuYOPJ6kkD+0KFHbqFcJokr/wA0x/6H5RmxQZRZN3pgW5KH5QoUS5UW39nZK4G2mdTb0k/lF7+h/oD6NV9GdBdm6S/OTD0qHnHnnzmUpZKj6NhYXsNNwEKFHFF//9k=",
+      "image_url": "https://api.mobileapi.dev/devices/1102/thumb.png",
+      "network": {
+        "id": 380,
+        "technology": "GSM / HSPA / LTE",
+        "bands_2g": "GSM 850 / 900 / 1800 / 1900",
+        "bands_3g": "HSDPA 850 / 900 / 2100",
+        "bands_4g": "1, 3, 5, 7, 8, 20, 28, 38, 40, 41",
+        "bands_5g": "",
+        "speed": "HSPA, LTE"
+      },
+      "body": {
+        "id": 372,
+        "dimensions": "247.5 x 157.3 x 7.5 mm (9.74 x 6.19 x 0.30 in)",
+        "weight": "467 g (1.03 lb)",
+        "build": "Glass front, aluminum back",
+        "sim": "Nano-SIM",
+        "other": "Splash resistantStylus support"
+      },
+      "display": {
+        "id": 379,
+        "type": "IPS LCD, 360 nits (typ)",
+        "size": "10.36 inches, 305.5 cm2(~78.5% screen-to-body ratio)",
+        "resolution": "1200 x 2000 pixels, 5:3 ratio (~225 ppi density)",
+        "protection": "Scratch-resistant glass",
+        "other": ""
+      },
+      "platform": {
+        "id": 373,
+        "os": "Android 13",
+        "chipset": "Unisoc Tiger T612 (12 nm)",
+        "cpu": "Octa-core (2x1.8 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55)",
+        "gpu": "Mali-G57"
+      },
+      "memory": {
+        "id": 372,
+        "card_slot": "microSDXC (dedicated slot)",
+        "internal": "64GB 4GB RAM, 128GB 4GB RAM",
+        "other": ""
+      },
+      "main_camera": {
+        "id": 372,
+        "modules": "8 MP, AF",
+        "features": "LED flash",
+        "video": "1080p@30fps"
+      },
+      "selfie_camera": {
+        "id": 371,
+        "modules": "8 MP",
+        "features": "",
+        "video": "Yes"
+      },
+      "sound": {
+        "id": 380,
+        "loudspeaker": "Yes, with stereo speakers",
+        "audio_jack": "Yes"
+      },
+      "comms": {
+        "id": 379,
+        "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+        "bluetooth": "5.0, A2DP, LE",
+        "positioning": "GPS, GLONASS, GALILEO",
+        "nfc": "Yes (market/region dependent)",
+        "radio": "FM radio",
+        "usb": "USB Type-C 2.0, OTG"
+      },
+      "features": {
+        "id": 359,
+        "sensors": "Accelerometer, proximity (accessories only)",
+        "other": ""
+      },
+      "battery": {
+        "id": 376,
+        "type": "Li-Po 8200 mAh",
+        "charging": "18W wired, PD3.0"
+      },
+      "misc": {
+        "id": 368,
+        "model_numbers": "",
+        "sar_us": "",
+        "sar_eu": "",
+        "price": "About 300 EUR"
+      }
+    },
+    {
+      "id": 1103,
+      "name": "Vibe 4G",
+      "manufacturer": {
+        "id": 38,
+        "name": "HMD",
+        "logo_b64": null,
+        "website_url": null
+      },
+      "manufacturer_name": "HMD",
+      "device_type": "phone",
+      "description": "HMD Vibe Android smartphone. Announced Apr 2024. Features 6.56″  display, Snapdragon 680 4G chipset, 4000 mAh battery, 128 GB storage, 6 GB RAM, Toughened glass.",
+      "colors": "Charcoal",
+      "storage": "64GB, 128GB",
+      "screen_resolution": "6.56\", 720x1480 pixels",
+      "weight": "186g",
+      "thickness": "8.4mm",
+      "release_date": "Released 2024, June 04",
+      "camera": "13MP",
+      "battery_capacity": "4000 mAh",
+      "hardware": "3/6GB RAM, Snapdragon 680 4G",
+      "image_b64": "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",
+      "image_url": "https://api.mobileapi.dev/devices/1103/thumb.png",
+      "network": {
+        "id": 381,
+        "technology": "GSM / HSPA / LTE",
+        "bands_2g": "GSM 850 / 900 / 1800 / 1900",
+        "bands_3g": "HSDPA 850 / 900 / 1900 / 2100",
+        "bands_4g": "2, 4, 5, 12, 13, 66",
+        "bands_5g": "",
+        "speed": "HSPA, LTE"
+      },
+      "body": {
+        "id": 373,
+        "dimensions": "163.8 x 75.2 x 8.4 mm (6.45 x 2.96 x 0.33 in)",
+        "weight": "186 g (6.56 oz)",
+        "build": "Glass front, plastic frame, plastic back",
+        "sim": "Nano-SIM",
+        "other": "Dust and splash resistant"
+      },
+      "display": {
+        "id": 380,
+        "type": "IPS LCD, 90Hz, 480 nits (typ), 600 nits (HBM)",
+        "size": "6.56 inches, 109.2 cm2(~88.7% screen-to-body ratio)",
+        "resolution": "720 x 1480 pixels, 18.5:9 ratio (~251 ppi density)",
+        "protection": "Toughened glass",
+        "other": ""
+      },
+      "platform": {
+        "id": 374,
+        "os": "Android 14",
+        "chipset": "Qualcomm SM6225 Snapdragon 680 4G (6 nm)",
+        "cpu": "Octa-core (4x2.4 GHz Kryo 265 Gold & 4x1.9 GHz Kryo 265 Silver)",
+        "gpu": "Adreno 610"
+      },
+      "memory": {
+        "id": 373,
+        "card_slot": "microSDXC",
+        "internal": "64GB 3GB RAM, 128GB 6GB RAM",
+        "other": ""
+      },
+      "main_camera": {
+        "id": 373,
+        "modules": "13 MP, (wide)2 MP, (depth)",
+        "features": "LED flash, HDR",
+        "video": "1080p@30fps"
+      },
+      "selfie_camera": {
+        "id": 372,
+        "modules": "5 MP",
+        "features": "",
+        "video": "Yes"
+      },
+      "sound": {
+        "id": 381,
+        "loudspeaker": "Yes",
+        "audio_jack": "Yes"
+      },
+      "comms": {
+        "id": 380,
+        "wlan": "Wi-Fi 802.11 a/b/g/n/ac",
+        "bluetooth": "5.0, A2DP, LE",
+        "positioning": "GPS",
+        "nfc": "No",
+        "radio": "Wireless FM radio",
+        "usb": "USB Type-C 2.0, OTG"
+      },
+      "features": {
+        "id": 360,
+        "sensors": "Accelerometer, proximity, compass, gyro, barometer",
+        "other": ""
+      },
+      "battery": {
+        "id": 377,
+        "type": "4000 mAh",
+        "charging": "10W wired"
+      },
+      "misc": {
+        "id": 369,
+        "model_numbers": "",
+        "sar_us": "",
+        "sar_eu": "",
+        "price": "About 100 EUR"
+      }
+    },
+    {
+      "id": 1105,
+      "name": "Pulse",
+      "manufacturer": {
+        "id": 38,
+        "name": "HMD",
+        "logo_b64": null,
+        "website_url": null
+      },
+      "manufacturer_name": "HMD",
+      "device_type": "phone",
+      "description": "HMD Pulse Android smartphone. Announced Apr 2024. Features 6.65″  display, Unisoc T606 chipset, 5000 mAh battery, 64 GB storage, 6 GB RAM.",
+      "colors": "Meteor Black, Dreamy Pink, Atmos Blue",
+      "storage": "64GB",
+      "screen_resolution": "6.65\", 720x1612 pixels",
+      "weight": "187g",
+      "thickness": "8.5mm",
+      "release_date": "Released 2024, April 24",
+      "camera": "13MP",
+      "battery_capacity": "5000 mAh",
+      "hardware": "4/6GB RAM, Unisoc T606",
+      "image_b64": "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",
+      "image_url": "https://api.mobileapi.dev/devices/1105/thumb.png",
+      "network": {
+        "id": 383,
+        "technology": "GSM / HSPA / LTE",
+        "bands_2g": "GSM 850 / 900 / 1800 / 1900",
+        "bands_3g": "HSDPA 850 / 900 / 2100",
+        "bands_4g": "1, 3, 5, 7, 8, 20, 28, 38, 40",
+        "bands_5g": "",
+        "speed": "HSPA, LTE"
+      },
+      "body": {
+        "id": 375,
+        "dimensions": "163.2 x 75 x 8.5 mm (6.43 x 2.95 x 0.33 in)",
+        "weight": "187 g (6.60 oz)",
+        "build": "",
+        "sim": "Nano-SIM",
+        "other": "Dust and splash resistant"
+      },
+      "display": {
+        "id": 382,
+        "type": "IPS LCD, 90Hz, 480 nits (typ), 600 nits (HBM)",
+        "size": "6.65 inches, 106.2 cm2(~86.8% screen-to-body ratio)",
+        "resolution": "720 x 1612 pixels, 20:9 ratio (~265 ppi density)",
+        "protection": "",
+        "other": ""
+      },
+      "platform": {
+        "id": 376,
+        "os": "Android 14",
+        "chipset": "Unisoc T606 (12 nm)",
+        "cpu": "Octa-core (2x1.6 GHz Cortex-A75 & 6x1.6 GHz Cortex-A55)",
+        "gpu": "Mali-G57 MP1"
+      },
+      "memory": {
+        "id": 375,
+        "card_slot": "microSDXC",
+        "internal": "64GB 4GB RAM, 64GB 6GB RAM",
+        "other": ""
+      },
+      "main_camera": {
+        "id": 375,
+        "modules": "13 MP, (wide), AFAuxiliary lens",
+        "features": "LED flash, HDR",
+        "video": "1080p@30fps"
+      },
+      "selfie_camera": {
+        "id": 374,
+        "modules": "8 MP",
+        "features": "",
+        "video": "Yes"
+      },
+      "sound": {
+        "id": 383,
+        "loudspeaker": "Yes",
+        "audio_jack": "Yes"
+      },
+      "comms": {
+        "id": 382,
+        "wlan": "Wi-Fi 802.11 a/b/g/n/ac",
+        "bluetooth": "5.0, A2DP, LE",
+        "positioning": "GPS, GALILEO",
+        "nfc": "Yes",
+        "radio": "Unspecified",
+        "usb": "USB Type-C 2.0, OTG"
+      },
+      "features": {
+        "id": 362,
+        "sensors": "Fingerprint (side-mounted), accelerometer, proximity, compass",
+        "other": ""
+      },
+      "battery": {
+        "id": 379,
+        "type": "5000 mAh, user replaceable",
+        "charging": "10W wired"
+      },
+      "misc": {
+        "id": 371,
+        "model_numbers": "",
+        "sar_us": "",
+        "sar_eu": "",
+        "price": "About 90 EUR"
+      }
+    },
+    {
+      "id": 1106,
+      "name": "Pulse+",
+      "manufacturer": {
+        "id": 38,
+        "name": "HMD",
+        "logo_b64": null,
+        "website_url": null
+      },
+      "manufacturer_name": "HMD",
+      "device_type": "phone",
+      "description": "HMD Pulse+ Android smartphone. Announced Apr 2024. Features 6.65″  display, Unisoc T606 chipset, 5000 mAh battery, 128 GB storage, 8 GB RAM.",
+      "colors": "Apricot Crush, Midnight Blue, Glacier Green",
+      "storage": "128GB",
+      "screen_resolution": "6.65\", 720x1612 pixels",
+      "weight": "187g",
+      "thickness": "8.5mm",
+      "release_date": "Released 2024, April 29",
+      "camera": "50MP",
+      "battery_capacity": "5000 mAh",
+      "hardware": "4-8GB RAM, Unisoc T606",
+      "image_b64": "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",
+      "image_url": "https://api.mobileapi.dev/devices/1106/thumb.png",
+      "network": {
+        "id": 384,
+        "technology": "GSM / HSPA / LTE",
+        "bands_2g": "GSM 850 / 900 / 1800 / 1900",
+        "bands_3g": "HSDPA 850 / 900 / 2100",
+        "bands_4g": "1, 3, 5, 7, 8, 20, 28, 38, 40",
+        "bands_5g": "",
+        "speed": "HSPA, LTE"
+      },
+      "body": {
+        "id": 376,
+        "dimensions": "163.2 x 75 x 8.5 mm (6.43 x 2.95 x 0.33 in)",
+        "weight": "187 g (6.60 oz)",
+        "build": "",
+        "sim": "Nano-SIM",
+        "other": "Dust and splash resistant"
+      },
+      "display": {
+        "id": 383,
+        "type": "IPS LCD, 90Hz, 480 nits (typ), 600 nits (HBM)",
+        "size": "6.65 inches, 106.2 cm2(~86.8% screen-to-body ratio)",
+        "resolution": "720 x 1612 pixels, 20:9 ratio (~265 ppi density)",
+        "protection": "",
+        "other": ""
+      },
+      "platform": {
+        "id": 377,
+        "os": "Android 14",
+        "chipset": "Unisoc T606 (12 nm)",
+        "cpu": "Octa-core (2x1.6 GHz Cortex-A75 & 6x1.6 GHz Cortex-A55)",
+        "gpu": "Mali-G57 MP1"
+      },
+      "memory": {
+        "id": 376,
+        "card_slot": "microSDXC",
+        "internal": "128GB 4GB RAM, 128GB 6GB RAM, 128GB 8GB RAM",
+        "other": ""
+      },
+      "main_camera": {
+        "id": 376,
+        "modules": "50 MP, (wide), AFAuxiliary lens",
+        "features": "LED flash, HDR",
+        "video": "1080p@30fps"
+      },
+      "selfie_camera": {
+        "id": 375,
+        "modules": "8 MP",
+        "features": "",
+        "video": "Yes"
+      },
+      "sound": {
+        "id": 384,
+        "loudspeaker": "Yes",
+        "audio_jack": "Yes"
+      },
+      "comms": {
+        "id": 383,
+        "wlan": "Wi-Fi 802.11 a/b/g/n/ac",
+        "bluetooth": "5.0, A2DP, LE",
+        "positioning": "GPS, GALILEO",
+        "nfc": "Yes",
+        "radio": "Unspecified",
+        "usb": "USB Type-C 2.0, OTG"
+      },
+      "features": {
+        "id": 363,
+        "sensors": "Fingerprint (side-mounted), accelerometer, proximity, compass",
+        "other": ""
+      },
+      "battery": {
+        "id": 380,
+        "type": "5000 mAh, user replaceable",
+        "charging": "10W wired"
+      },
+      "misc": {
+        "id": 372,
+        "model_numbers": "",
+        "sar_us": "",
+        "sar_eu": "",
+        "price": "About 90 EUR"
+      }
+    },
+    {
+      "id": 1107,
+      "name": "Bold",
+      "manufacturer": {
+        "id": 54,
+        "name": "Lava",
+        "logo_b64": null,
+        "website_url": null
+      },
+      "manufacturer_name": "Lava",
+      "device_type": "phone",
+      "description": "HMD Bold Android smartphone. Not announced yet. Features 6.74″  display, Unisoc T7200 chipset, 5000 mAh battery, 256 GB storage, 6 GB RAM.",
+      "colors": "Black; other colors",
+      "storage": "128GB, 256GB",
+      "screen_resolution": "6.74\", 720x1612 pixels",
+      "weight": "",
+      "thickness": "",
+      "release_date": "Cancelled",
+      "camera": "50MP",
+      "battery_capacity": "5000 mAh",
+      "hardware": "4/6GB RAM, Unisoc T7200",
+      "image_b64": "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",
+      "image_url": "https://api.mobileapi.dev/devices/1107/thumb.png",
+      "network": {
+        "id": 385,
+        "technology": "GSM / HSPA / LTE",
+        "bands_2g": "GSM 850 / 900 / 1800 / 1900",
+        "bands_3g": "HSDPA 850 / 900 / 2100",
+        "bands_4g": "LTE",
+        "bands_5g": "",
+        "speed": "HSPA, LTE"
+      },
+      "body": {
+        "id": 377,
+        "dimensions": "-",
+        "weight": "-",
+        "build": "",
+        "sim": "Nano-SIM",
+        "other": "Dust and splash resistant"
+      },
+      "display": {
+        "id": 384,
+        "type": "IPS LCD, 90Hz",
+        "size": "6.74 inches, 109.1 cm2",
+        "resolution": "720 x 1612 pixels, 20:9 ratio (~262 ppi density)",
+        "protection": "",
+        "other": ""
+      },
+      "platform": {
+        "id": 378,
+        "os": "Android 15",
+        "chipset": "Unisoc T7200 (12 nm)",
+        "cpu": "Octa-core (2x1.6 GHz Cortex-A75 & 6x1.6 GHz Cortex-A55)",
+        "gpu": "Mali-G57 MP1"
+      },
+      "memory": {
+        "id": 377,
+        "card_slot": "microSDXC",
+        "internal": "128GB 4GB RAM, 256GB 6GB RAM",
+        "other": ""
+      },
+      "main_camera": {
+        "id": 377,
+        "modules": "50 MP, (wide), AFAuxiliary lens",
+        "features": "LED flash, HDR",
+        "video": "1080p@30fps"
+      },
+      "selfie_camera": {
+        "id": 376,
+        "modules": "8 MP",
+        "features": "",
+        "video": "Yes"
+      },
+      "sound": {
+        "id": 385,
+        "loudspeaker": "Yes",
+        "audio_jack": "Yes"
+      },
+      "comms": {
+        "id": 384,
+        "wlan": "Wi-Fi 802.11 a/b/g/n/ac",
+        "bluetooth": "5.0, A2DP, LE",
+        "positioning": "GPS",
+        "nfc": "No",
+        "radio": "Unspecified",
+        "usb": "USB Type-C 2.0, OTG"
+      },
+      "features": {
+        "id": 364,
+        "sensors": "Fingerprint (side-mounted), accelerometer, proximity, compass",
+        "other": ""
+      },
+      "battery": {
+        "id": 381,
+        "type": "5000 mAh, user replaceable",
+        "charging": "20W wired"
+      },
+      "misc": {
+        "id": 373,
+        "model_numbers": "",
+        "sar_us": "",
+        "sar_eu": "",
+        "price": "About 80 EUR"
+      }
+    }
+  ]
+}

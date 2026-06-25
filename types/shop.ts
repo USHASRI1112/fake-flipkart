@@ -15,6 +15,8 @@ export type Product = {
   price: number;
   rating: number;
   image: string;
+  imageUrl?: string;
+  imageBase64?: string;
   tagline: string;
   description: string;
   badge?: string;

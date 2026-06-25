@@ -74,13 +74,11 @@ export function OrderDeliveryCelebration({ order, product, onDone }: Props) {
   const deliveryOpacity = useRef(new Animated.Value(0)).current;
   const deliveryScale = useRef(new Animated.Value(0.9)).current;
   const completionTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const activeDeliveryKey = useRef<string | null>(null);
   const [delivered, setDelivered] = useState(false);
 
   const routePoints = useMemo(() => ROUTE, []);
   const statusLabel = ORDER_STATUS_LABELS[order.statusIndex] ?? ORDER_STATUS_LABELS[0];
-  const isOutForDelivery = order.statusIndex === 4;
-  const isDelivered = order.statusIndex >= 5;
+  const isDelivered = delivered || order.statusIndex >= 5;
 
   useEffect(() => {
     if (completionTimer.current) {
@@ -88,56 +86,64 @@ export function OrderDeliveryCelebration({ order, product, onDone }: Props) {
       completionTimer.current = null;
     }
 
-    if (!isOutForDelivery && !isDelivered) {
-      activeDeliveryKey.current = null;
-      setDelivered(false);
-      progress.stopAnimation();
-      progress.setValue(0);
-      deliveryOpacity.setValue(0);
-      deliveryScale.setValue(0.9);
-      return;
-    }
-
     if (isDelivered) {
-      activeDeliveryKey.current = null;
       setDelivered(true);
       progress.stopAnimation();
       progress.setValue(1);
-      deliveryOpacity.setValue(1);
-      deliveryScale.setValue(1);
-      completionTimer.current = setTimeout(onDone, 1600);
+      Animated.parallel([
+        Animated.timing(deliveryOpacity, {
+          toValue: 1,
+          duration: 240,
+          easing: Easing.out(Easing.cubic),
+          useNativeDriver: false,
+        }),
+        Animated.spring(deliveryScale, {
+          toValue: 1,
+          friction: 7,
+          tension: 58,
+          useNativeDriver: false,
+        }),
+      ]).start();
+      completionTimer.current = setTimeout(onDone, 1400);
       return;
     }
 
-    const deliveryStart = order.outForDeliveryAt ?? Date.now();
-    const deliveryKey = `${order.id}:${deliveryStart}`;
-    if (activeDeliveryKey.current === deliveryKey) {
-      return;
-    }
-
-    activeDeliveryKey.current = deliveryKey;
     setDelivered(false);
     deliveryOpacity.setValue(0);
     deliveryScale.setValue(0.9);
 
-    const elapsed = Math.max(0, Date.now() - deliveryStart);
-    const progressValue = Math.min(1, elapsed / DELIVERY_DURATION_MS);
-    const remaining = Math.max(0, DELIVERY_DURATION_MS - elapsed);
-
     progress.stopAnimation();
-    progress.setValue(progressValue);
-
-    if (progressValue >= 1) {
-      return;
-    }
+    progress.setValue(0);
 
     Animated.timing(progress, {
       toValue: 1,
-      duration: Math.max(250, remaining),
+      duration: DELIVERY_DURATION_MS,
       easing: Easing.inOut(Easing.cubic),
       useNativeDriver: false,
-    }).start();
-  }, [deliveryOpacity, deliveryScale, isDelivered, isOutForDelivery, onDone, order.id, order.outForDeliveryAt, progress]);
+    }).start(({ finished }) => {
+      if (!finished) {
+        return;
+      }
+
+      setDelivered(true);
+      Animated.parallel([
+        Animated.timing(deliveryOpacity, {
+          toValue: 1,
+          duration: 260,
+          easing: Easing.out(Easing.cubic),
+          useNativeDriver: false,
+        }),
+        Animated.spring(deliveryScale, {
+          toValue: 1,
+          friction: 7,
+          tension: 58,
+          useNativeDriver: false,
+        }),
+      ]).start();
+
+      completionTimer.current = setTimeout(onDone, 1300);
+    });
+  }, [deliveryOpacity, deliveryScale, isDelivered, onDone, order.id, progress]);
 
   useEffect(
     () => () => {
@@ -163,13 +169,11 @@ export function OrderDeliveryCelebration({ order, product, onDone }: Props) {
     inputRange: [0, 0.5, 1],
     outputRange: [0.96, 1, 1.02],
   });
-  const bikeVisible = isOutForDelivery && !delivered;
-  const progressFillWidth = isDelivered ? '100%' : isOutForDelivery ? '78%' : '24%';
-  const summaryNote = isOutForDelivery
-    ? 'The courier is taking a realistic curved route before confirming delivery.'
-    : isDelivered
-      ? 'Your order reached the destination and was marked delivered.'
-      : 'The bike will start moving once the order reaches Out For Delivery.';
+  const bikeVisible = !isDelivered;
+  const progressFillWidth = isDelivered ? '100%' : '78%';
+  const summaryNote = isDelivered
+    ? 'Your order reached the destination and was marked delivered.'
+    : 'The courier is taking a realistic curved route before confirming delivery.';
 
   return (
     <View style={styles.wrap}>

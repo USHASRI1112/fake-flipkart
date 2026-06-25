@@ -1,9 +1,11 @@
 import catalogData from '../store/catalog.generated.json';
+import mobileProductsData from '../store/mobileapi-products.json';
 import type { Category, Product } from '../types/shop';
 
 export type CatalogProduct = Product;
 
 const CATALOG_PRODUCTS = catalogData as CatalogProduct[];
+const MOBILE_PRODUCTS = mobileProductsData as CatalogProduct[];
 
 const FEATURED_CATEGORY_IDS = ['mobiles-and-accessories', 'food-and-nutrition'];
 
@@ -104,7 +106,11 @@ function scoreProduct(product: CatalogProduct) {
 }
 
 export async function fetchCatalogProducts() {
-  return CATALOG_PRODUCTS;
+  const nonMobileProducts = CATALOG_PRODUCTS.filter(
+    (product) => product.categoryId !== 'mobiles-and-accessories',
+  ).filter((product) => !shouldExcludeProduct(product));
+
+  return [...MOBILE_PRODUCTS, ...nonMobileProducts];
 }
 
 export function getCatalogCategories(products: Product[]) {

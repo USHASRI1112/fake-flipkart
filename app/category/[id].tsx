@@ -76,8 +76,8 @@ export default function CategoryScreen() {
         <View style={styles.emptyWrap}>
           <EmptyState
             iconName="refresh"
-            title="Loading live catalog"
-            subtitle="Loading products from your CSV catalog..."
+            title="Loading local catalog"
+            subtitle="Loading products from the cached catalog..."
           />
         </View>
       ) : (

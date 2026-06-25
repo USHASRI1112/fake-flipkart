@@ -7,7 +7,9 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "generate:catalog": "node scripts/build-catalog.mjs"
+    "generate:catalog": "node scripts/build-catalog.mjs",
+    "build:mobileapi-products": "node scripts/build-mobileapi-products.mjs",
+    "import:mobileapi": "node scripts/import-mobileapi.mjs"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
