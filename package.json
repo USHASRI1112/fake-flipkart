@@ -9,7 +9,9 @@
     "web": "expo start --web",
     "generate:catalog": "node scripts/build-catalog.mjs",
     "build:mobileapi-products": "node scripts/build-mobileapi-products.mjs",
-    "import:mobileapi": "node scripts/import-mobileapi.mjs"
+    "import:mobileapi": "node scripts/import-mobileapi.mjs",
+    "check:playstore": "node scripts/check-playstore-readiness.mjs",
+    "build:android:production": "npm run check:playstore && npx eas-cli@latest build --platform android --profile production"
   },
   "dependencies": {
     "@expo/vector-icons": "^15.0.3",
