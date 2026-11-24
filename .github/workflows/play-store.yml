@@ -1,0 +1,131 @@
+name: Android Play Store
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+    inputs:
+      submit_to_play_store:
+        description: Upload the AAB to the Google Play internal testing track as a draft
+        required: true
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: android-play-store
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Scan and build Android AAB
+    runs-on: ubuntu-latest
+    outputs:
+      build_id: ${{ steps.build.outputs.build_id }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Check Play Store build readiness
+        run: npm run check:playstore
+
+      - name: Build production AAB with EAS
+        id: build
+        env:
+          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+        run: |
+          if [ -z "$EXPO_TOKEN" ]; then
+            echo "::error::Add an EXPO_TOKEN repository secret before running this workflow."
+            exit 1
+          fi
+          npx --yes eas-cli@latest build --platform android --profile production --non-interactive --wait --json > "$RUNNER_TEMP/eas-builds.json"
+          node --input-type=commonjs -e '
+            const fs = require("node:fs");
+            const builds = JSON.parse(fs.readFileSync(process.argv[1], "utf8"));
+            const build = Array.isArray(builds) ? builds[0] : builds;
+            if (!build?.id) {
+              console.error("EAS did not return a build ID.");
+              process.exit(1);
+            }
+            fs.appendFileSync(process.env.GITHUB_OUTPUT, `build_id=${build.id}\n`);
+          ' "$RUNNER_TEMP/eas-builds.json"
+
+      - name: Download the completed AAB
+        env:
+          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+          BUILD_ID: ${{ steps.build.outputs.build_id }}
+        run: |
+          npx --yes eas-cli@latest build:view "$BUILD_ID" --json > "$RUNNER_TEMP/eas-build.json"
+          node --input-type=commonjs -e '
+            const fs = require("node:fs");
+            const build = JSON.parse(fs.readFileSync(process.argv[1], "utf8"));
+            const url = build.artifacts?.applicationArchiveUrl;
+            if (!url) {
+              console.error("EAS did not provide an application archive URL.");
+              process.exit(1);
+            }
+            fs.writeFileSync(process.argv[2], url);
+            fs.writeFileSync(process.argv[3], new URL(url).pathname.endsWith(".aab") ? "aab" : "archive");
+          ' "$RUNNER_TEMP/eas-build.json" "$RUNNER_TEMP/eas-artifact-url" "$RUNNER_TEMP/eas-artifact-type"
+          curl --fail --location --retry 3 "$(cat "$RUNNER_TEMP/eas-artifact-url")" --output "$RUNNER_TEMP/eas-artifact"
+          mkdir -p artifacts
+          if [ "$(cat "$RUNNER_TEMP/eas-artifact-type")" = "aab" ]; then
+            cp "$RUNNER_TEMP/eas-artifact" artifacts/fake-flipkart.aab
+          else
+            aab_member="$(tar -tzf "$RUNNER_TEMP/eas-artifact" | grep -E '\.aab$' | head -n 1)"
+            if [ -z "$aab_member" ]; then
+              echo "::error::EAS build archive did not contain an AAB."
+              exit 1
+            fi
+            tar -xOzf "$RUNNER_TEMP/eas-artifact" "$aab_member" > artifacts/fake-flipkart.aab
+          fi
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: android-production-aab
+          path: artifacts/fake-flipkart.aab
+          if-no-files-found: error
+          retention-days: 14
+
+  submit:
+    name: Submit AAB to Google Play
+    if: github.event_name == 'workflow_dispatch' && inputs.submit_to_play_store
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Submit draft to the internal testing track
+        env:
+          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+          PLAY_STORE_SERVICE_ACCOUNT_JSON: ${{ secrets.PLAY_STORE_SERVICE_ACCOUNT_JSON }}
+          BUILD_ID: ${{ needs.build.outputs.build_id }}
+        run: |
+          if [ -z "$EXPO_TOKEN" ]; then
+            echo "::error::Add an EXPO_TOKEN repository secret before running this workflow."
+            exit 1
+          fi
+          if [ -z "$PLAY_STORE_SERVICE_ACCOUNT_JSON" ]; then
+            echo "::error::Add the Play Console service-account JSON as PLAY_STORE_SERVICE_ACCOUNT_JSON."
+            exit 1
+          fi
+          umask 077
+          printf '%s' "$PLAY_STORE_SERVICE_ACCOUNT_JSON" > google-play-service-account.json
+          trap 'rm -f google-play-service-account.json' EXIT
+          npx --yes eas-cli@latest submit --platform android --profile production --id "$BUILD_ID" --non-interactive
