@@ -47,8 +47,9 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "653ed0e3-a9df-4a6c-9db1-68ad89f4788b"
+        "projectId": "9152d4bd-7a03-4218-b8d8-2b59a8c49784"
       }
-    }
+    },
+    "owner": "anil_kadurka_07"
   }
 }
